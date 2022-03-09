@@ -58,7 +58,7 @@
    <main class="main">
       <section class="hero">
          <div class="hero__left">
-            <span class="hero__text">Upgrade your being with Yolllo Social PLatform and NFT Packaging</span>
+            <span class="hero__text">Upgrade your being with Yolllo Social Platform and NFT Packaging</span>
             <h1 class="hero__title">Whole universe for your succeed</h1>
             <p class="hero__description">A social club for Artists and Producers</p>
             <a class="hero__button" href="#" rel="noopener noreferrer">Try it for Free</a>
@@ -99,7 +99,7 @@
                <svg class="features__item-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-features1"></use>
                </svg>
-               <h2 class="features__item-title">Content feed</h2>
+               <h2 class="features__item-title">Create, promote, earn value on content</h2>
                <div class="features__item-description">
                   <p>Want get famous fast?</p>
                   <p>Want to sell your art as expensive as possible?</p>
@@ -517,7 +517,7 @@
                      rel="noopener noreferrer">Terms of Use</a> and <a class="service__form-checkbox-link" href="#"
                      target="_blank" rel="noopener noreferrer">Privacy Policy</a></span>
             </label>
-            <a class="service__form-button" href="#">I’m open for free consultation</a>
+            <button class="service__form-button" href="#">I’m open for free consultation</button>
          </form>
       </section>
       <section class="question">
@@ -883,6 +883,20 @@
    </footer>
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <script type="text/javascript" src="./js/scripts.js" async></script>
+
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $(".header__menu-list").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+               top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 3000);
+         });
+      });
+   </script>
+
 </body>
 
 </html>

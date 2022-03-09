@@ -2,9 +2,10 @@ const burger = document.querySelector('.header__burger');
 const body = document.querySelector('.body')
 const menu = document.querySelector('.header__menu');
 const close = document.querySelector('.header__close');
+const link = document.querySelector('.header__menu-link')
 burger.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
-
+link.addEventListener('click', closeLink);
 
 function openMenu() {
 
@@ -18,6 +19,14 @@ function openMenu() {
 
 
 function closeMenu() {
+   body.classList.remove('active');
+   menu.classList.remove('open');
+   close.classList.remove('active');
+   burger.classList.remove('close')
+}
+
+function closeLink() {
+   const menu = document.querySelector('.header__menu');
    body.classList.remove('active');
    menu.classList.remove('open');
    close.classList.remove('active');
