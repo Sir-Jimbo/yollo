@@ -177,9 +177,18 @@
       margin-top: 5px;
       background-color: #ffffff;
       @media screen and (min-width: 768px) {
-         left: unset;
+         left: 20%;
          margin-top: 0;
-         margin-left: -200px;
+      }
+
+      @media screen and (min-width: 1024px) {
+         left: 27%;
+      }
+      @media screen and (min-width: 1280px) {
+         left: 29%;
+      }
+      @media screen and (min-width: 1366px) {
+         left: 30%;
       }
    }
 

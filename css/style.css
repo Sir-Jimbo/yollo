@@ -1806,9 +1806,26 @@ a {
 
 @media screen and (min-width: 768px) {
   .service__form-checkbox + label:before {
-    left: unset;
+    left: 20%;
     margin-top: 0;
-    margin-left: -200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service__form-checkbox + label:before {
+    left: 27%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .service__form-checkbox + label:before {
+    left: 29%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .service__form-checkbox + label:before {
+    left: 30%;
   }
 }
 
