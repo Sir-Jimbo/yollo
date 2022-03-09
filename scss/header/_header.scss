@@ -79,6 +79,9 @@
          text-align: left;
          margin-bottom: 0;
          margin-right: 65px;
+         @media screen and (min-width: 1280px) {
+            margin-right: 25px;
+         }
          @media screen and (min-width: 1366px) {
             margin-right: 105px;
          }
@@ -91,13 +94,17 @@
          margin-bottom: 0;
          margin-right: 15px;
       }
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1280px) {
          margin-right: 65px;
       }
    }
    &__menu-item:first-child {
       display: inline-flex;
       align-items: center;
+   }
+
+   &__menu-item:first-child &__menu-link {
+      margin-right: 10px;
    }
 
    &__menu-link {

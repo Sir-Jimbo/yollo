@@ -197,6 +197,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) and (min-width: 1280px) {
+  .header__menu-list {
+    margin-right: 25px;
+  }
+}
+
 @media screen and (min-width: 1024px) and (min-width: 1366px) {
   .header__menu-list {
     margin-right: 105px;
@@ -214,7 +220,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .header__menu-item:not(:last-child) {
     margin-right: 65px;
   }
@@ -227,6 +233,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__menu-item:first-child .header__menu-link {
+  margin-right: 10px;
 }
 
 .header__menu-link {
@@ -320,7 +330,7 @@ a {
   padding: 40px 27px 40px 30px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .hero__left {
     max-width: 625px;
     padding: 70px 110px 70px 100px;
@@ -1577,12 +1587,7 @@ a {
   max-width: 1440px;
   margin-bottom: 50px;
   padding: 40px 10px 0 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .service {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 1170px) {
@@ -1601,24 +1606,14 @@ a {
 
 .service__title {
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .service__title {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .service__description {
   max-width: 375px;
   margin-top: 0;
   margin-bottom: 140px;
-}
-
-@media screen and (min-width: 768px) {
-  .service__description {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 @media screen and (min-width: 1170px) {
@@ -1721,6 +1716,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -1786,6 +1782,9 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1807,7 +1806,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .service__form-checkbox + label:before {
+    left: unset;
     margin-top: 0;
+    margin-left: -400px;
   }
 }
 
