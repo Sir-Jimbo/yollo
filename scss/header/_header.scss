@@ -150,4 +150,17 @@
    &__menu-arrow-right {
       transform: rotate(45deg);
    }
+
+   &__menu-link.mobile {
+      @media screen and (min-width: 1024px) {
+         display: none;
+      }
+   }
+
+   &__menu-link.desktop {
+      display: none;
+      @media screen and (min-width: 1024px) {
+         display: inline-flex;
+      }
+   }
 }

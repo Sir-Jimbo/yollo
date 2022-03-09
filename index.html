@@ -39,7 +39,8 @@
       <nav class="header__menu">
          <ul class="header__menu-list list">
             <li class="header__menu-item">
-               <a class="header__menu-link" href="#products" rel="noopener noreferrer">Yolllo Products</a>
+               <a class="header__menu-link desktop" href="#products" rel="noopener noreferrer">Yolllo Products</a>
+               <a class="header__menu-link mobile" href="#products-mobile" rel="noopener noreferrer">Yolllo Products</a>
                <img src="./images/arrow.png" alt="" width="14" height="9">
             </li>
             <li class="header__menu-item">
@@ -539,7 +540,8 @@
                Work with most relevant and endless product - digital art!
             </div>
          </div>
-         <div class="swiper question__mobile">
+         <div id="products"></div>
+         <div id="products-mobile" class="swiper question__mobile">
             <ul class="question__list list swiper-wrapper">
                <li class="question__item swiper-slide">
                   <h3 class="question__item-title">Social Platform</h3>
@@ -608,7 +610,7 @@
             </ul>
             <div class="swiper-pagination"></div>
          </div>
-         <div id="products" class="question__desktop">
+         <div class="question__desktop">
             <ul class="question__list list">
                <li class="question__item swiper-slide">
                   <h3 class="question__item-title">Social Platform</h3>
@@ -883,7 +885,7 @@
    </footer>
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <script type="text/javascript" src="./js/scripts.js" async></script>
-
+   <!--
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
    <script type="text/javascript">
@@ -896,7 +898,7 @@
          });
       });
    </script>
-
+-->
 </body>
 
 </html>

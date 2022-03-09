@@ -294,6 +294,24 @@ a {
           transform: rotate(45deg);
 }
 
+@media screen and (min-width: 1024px) {
+  .header__menu-link.mobile {
+    display: none;
+  }
+}
+
+.header__menu-link.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__menu-link.desktop {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .hero {
   position: relative;
   max-width: 1440px;
