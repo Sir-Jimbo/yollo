@@ -1,0 +1,215 @@
+.question {
+   position: relative;
+   max-width: 1440px;
+   margin-bottom: 110px;
+   padding: 70px 10px 0 10px;
+   text-align: center;
+
+   @media screen and (min-width: 1170px) {
+      padding: 110px 110px 0 110px;
+      margin-bottom: 150px;
+      text-align: center;
+   }
+
+   @media screen and (min-width: 1441px) {
+      margin: 0 auto;
+      margin-bottom: 150px;
+   }
+
+   &__icon {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      fill: #7f4bdc;
+      @media screen and (min-width: 1170px) {
+         left: 595px;
+         right: unset;
+      }
+   }
+
+   &__top {
+      @media screen and (min-width: 1170px) {
+         display: flex;
+         margin-bottom: 100px;
+      }
+   }
+
+   &__left {
+      position: relative;
+      text-align: left;
+      @media screen and (min-width: 1170px) {
+         padding: 0 40px;
+         width: 50%;
+      }
+   }
+
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__description {
+      margin-top: 0;
+      margin-bottom: 70px;
+   }
+
+   &__left-icon {
+      position: absolute;
+      fill: #7f4bdc;
+      right: 0;
+      bottom: -42px;
+      @media screen and (min-width: 1170px) {
+         left: 320px;
+         right: unset;
+         bottom: 40px;
+         width: 64px;
+         height: 64px;
+      }
+   }
+
+   &__text {
+      padding: 16px 36px;
+      background: #f4f4f4;
+      border-radius: 0px 30px 30px 30px;
+      font-size: 28px;
+      line-height: 1.39;
+      margin-bottom: 120px;
+      text-align: left;
+      @media screen and (min-width: 1170px) {
+         width: 50%;
+         margin: 0 10px;
+         padding: 45px 84px;
+         max-width: 708px;
+      }
+      @media screen and (min-width: 1366px) {
+         font-size: 40px;
+         line-height: 1.22;
+      }
+   }
+
+   &__desktop {
+      display: none;
+      @media screen and (min-width: 1170px) {
+         display: block;
+      }
+   }
+
+   &__mobile {
+      @media screen and (min-width: 1170px) {
+         display: none;
+      }
+   }
+
+   &__desktop &__list {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__desktop &__item {
+      width: calc((100% - 3 * 20px) / 3);
+      margin: 10px;
+   }
+
+   &__desktop &__item:nth-child(1) {
+      border-radius: 50px 50px 0 50px;
+   }
+
+   &__desktop &__item:nth-child(2) {
+      border-radius: 50px 50px 0 0;
+   }
+
+   &__desktop &__item:nth-child(3) {
+      border-radius: 50px 50px 50px 0;
+   }
+
+   &__desktop &__item:nth-child(4) {
+      border-radius: 50px 0 50px 50px;
+   }
+
+   &__desktop &__item:nth-child(5) {
+      border-radius: 0 0 50px 50px;
+   }
+
+   &__item {
+      padding: 34px 22px;
+      border: 2px solid #0d0e17;
+      border-radius: 0px 30px 30px 30px;
+      text-align: center;
+      @media screen and (min-width: 1280px) {
+         padding: 54px 40px;
+      }
+      @media screen and (min-width: 1170px) {
+         border: 4px solid #0d0e17;
+         border-radius: 0px 50px 50px 50px;
+      }
+   }
+
+   &__item-title {
+      margin-bottom: 30px;
+   }
+
+   &__item-description {
+      margin-top: 0;
+      margin-bottom: 45px;
+      min-height: 110px;
+      @media screen and (min-width: 1170px) {
+         min-height: 150px;
+      }
+   }
+
+   &__item-link {
+      display: inline-flex;
+      padding: 18px 52px;
+      background: #ed6a32;
+      border-radius: 20px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      align-items: center;
+      @media screen and (min-width: 1366px) {
+         padding: 27px 60px;
+         font-size: 20px;
+         border-radius: 30px;
+      }
+   }
+
+   &__item-link-text {
+      margin-right: 15px;
+   }
+
+   &__item-link-icon {
+      fill: #ffffff;
+   }
+
+   .swiper-pagination {
+      bottom: 0;
+      position: relative;
+      margin-top: 15px;
+   }
+
+   .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      background: #f4f4f4;
+      opacity: unset;
+   }
+
+   .swiper-pagination-bullet-active {
+      background: #ed6a32;
+   }
+
+   &__link {
+      display: inline-flex;
+      padding: 18px 56px;
+      margin-top: 45px;
+      background: #7f4bdc;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      @media screen and (min-width: 1170px) {
+         padding: 27px 128px;
+         border-radius: 30px;
+         font-size: 20px;
+      }
+   }
+}

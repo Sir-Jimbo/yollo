@@ -1,0 +1,115 @@
+.subscriptions {
+   max-width: 1440px;
+   margin-bottom: 80px;
+   padding: 0 10px;
+
+   @media screen and (min-width: 1170px) {
+      padding: 0 120px;
+   }
+
+   @media screen and (min-width: 1441px) {
+      margin: 0 auto;
+      margin-bottom: 100px;
+   }
+
+   &__title {
+      max-width: 461px;
+      margin-bottom: 40px;
+   }
+
+   &__item {
+      padding: 30px 55px;
+      background: #f4f4f4;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.59;
+
+      @media screen and (min-width: 768px) {
+         padding: 30px 27px;
+      }
+
+      &:first-child {
+         @media screen and (min-width: 1366px) {
+            border-radius: 50px 0px 0px 50px;
+         }
+      }
+      &:last-child {
+         @media screen and (min-width: 1366px) {
+            border-radius: 0px 50px 50px 0px;
+         }
+      }
+   }
+
+   &__item-block {
+      min-height: 275px;
+      margin-bottom: 15px;
+      @media screen and (min-width: 1366px) {
+         min-height: 300px;
+      }
+   }
+
+   &__item-title,
+   &__item-price,
+   &__item-description {
+      margin-top: 0;
+      margin-bottom: 15px;
+   }
+   &__item-title,
+   &__item-price {
+      @media screen and (min-width: 768px) {
+         font-size: 22px;
+         line-height: 1.36;
+      }
+   }
+
+   &__item-price {
+      @media screen and (min-width: 768px) {
+         margin-bottom: 35px;
+      }
+   }
+
+   &__item-link {
+      display: inline-flex;
+      padding: 15px 50px;
+      background: #ed6a32;
+      border-radius: 20px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      @media screen and (min-width: 768px) {
+         font-size: 20px;
+         line-height: 1.35;
+         padding: 25px 70px;
+         border-radius: 30px;
+      }
+   }
+
+   .color1 {
+      color: #24c4d5;
+   }
+
+   .color2 {
+      color: #7f4bdc;
+   }
+
+   .color3 {
+      color: #ed6a32;
+   }
+
+   .swiper-pagination {
+      bottom: 0;
+      position: relative;
+      margin-top: 15px;
+   }
+
+   .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      background: #f4f4f4;
+      opacity: unset;
+   }
+
+   .swiper-pagination-bullet-active {
+      background: #ed6a32;
+   }
+}

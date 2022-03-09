@@ -1,0 +1,98 @@
+.hero {
+   position: relative;
+   max-width: 1440px;
+   padding: 0 10px;
+   margin-bottom: 30px;
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+
+   @media screen and (min-width: 1170px) {
+      padding: 0 0 0 120px;
+      margin-bottom: 130px;
+   }
+
+   @media screen and (min-width: 1441px) {
+      margin: 0 auto;
+      margin-bottom: 130px;
+   }
+
+   &__left {
+      position: relative;
+      border: 2px solid #0d0e17;
+      border-radius: 30px;
+      padding: 40px 27px 40px 30px;
+      @media screen and (min-width: 1366px) {
+         max-width: 625px;
+         padding: 70px 110px 70px 100px;
+         border: 4px solid #0d0e17;
+         border-radius: 50px;
+      }
+   }
+
+   &__text {
+      display: inline-flex;
+      padding-right: 46px;
+      margin-bottom: 15px;
+      @media screen and (min-width: 1366px) {
+         padding-right: 0;
+      }
+   }
+
+   &__title {
+      margin-bottom: 30px;
+      @media screen and (min-width: 1366px) {
+         margin-bottom: 35px;
+      }
+   }
+
+   &__description {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.59;
+      margin-bottom: 15px;
+      @media screen and (min-width: 1366px) {
+         margin-bottom: 45px;
+      }
+   }
+
+   &__button {
+      display: inline-flex;
+      padding: 15px 30px;
+      background: #7f4bdc;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+   }
+
+   &__icon {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      top: 60px;
+      right: 18px;
+      fill: #7f4bdc;
+      @media screen and (min-width: 1366px) {
+         top: 48px;
+         right: 64px;
+      }
+   }
+
+   picture {
+      display: block;
+      margin: 0 auto;
+      max-width: 706px;
+      max-height: 554px;
+   }
+
+   &__image {
+      border-radius: 30px;
+      height: 100%;
+      object-fit: cover;
+      @media screen and (min-width: 768px) {
+         border-radius: 50px 0px 0px 50px;
+      }
+   }
+}

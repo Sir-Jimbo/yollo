@@ -1,0 +1,103 @@
+.footer {
+   max-width: 1440px;
+   text-align: center;
+   @media screen and (min-width: 1170px) {
+      display: flex;
+   }
+
+   @media screen and (min-width: 1441px) {
+      margin: 0 auto;
+   }
+
+   &__menu {
+      padding: 40px 80px;
+      background: #ed6a32;
+      color: #ffffff;
+      @media screen and (min-width: 1170px) {
+         display: flex;
+         padding: 70px 85px 70px 120px;
+         min-width: 933px;
+         text-align: left;
+      }
+   }
+
+   &__menu-first,
+   &__menu-second {
+      margin-bottom: 25px;
+   }
+   &__menu-first-block {
+      @media screen and (min-width: 1170px) {
+         display: flex;
+      }
+   }
+
+   &__menu-first-block &__menu-list {
+      @media screen and (min-width: 1170px) {
+         margin-right: 40px;
+      }
+   }
+   &__menu-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+      @media screen and (min-width: 1170px) {
+         font-size: 22px;
+         line-height: 1.36;
+         margin-bottom: 30px;
+      }
+   }
+
+   &__menu-item {
+      margin-bottom: 15px;
+   }
+
+   &__menu-link {
+      font-size: 14px;
+      line-height: 2.14;
+      color: #ffffff;
+      @media screen and (min-width: 1170px) {
+         font-size: 16px;
+         line-height: 1.88;
+      }
+   }
+
+   &__right {
+      padding: 55px 10px 20px 10px;
+      background: #f4f4f4;
+      @media screen and (min-width: 1170px) {
+         padding: 75px 0 20px 65px;
+         text-align: left;
+      }
+   }
+
+   &__logo {
+      margin-bottom: 25px;
+      @media screen and (min-width: 1170px) {
+         margin-bottom: 65px;
+      }
+   }
+
+   &__description {
+      margin-top: 0;
+      margin-bottom: 45px;
+      font-size: 18px;
+      @media screen and (min-width: 1170px) {
+         font-size: 22px;
+         max-width: 300px;
+      }
+   }
+
+   &__icon {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      @media screen and (min-width: 1170px) {
+         margin: 0;
+         margin-bottom: 155px;
+      }
+   }
+
+   &__menu-second {
+      @media screen and (min-width: 1170px) {
+         margin-right: 40px;
+      }
+   }
+}
