@@ -1808,7 +1808,7 @@ a {
   .service__form-checkbox + label:before {
     left: unset;
     margin-top: 0;
-    margin-left: -400px;
+    margin-left: -200px;
   }
 }
 
