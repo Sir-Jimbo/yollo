@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Yollo">
+   <link rel="stylesheet" rel="preload" as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet"
+      rel="preload" as="font">
+   <link rel="stylesheet" rel="preload" as="style" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="stylesheet" rel="preload" as="style" href="./css/style.min.css?v=2">
+   <title>Yollo</title>
+</head>
+
+<body class="body">
+   <header class="header">
+      <a class="header__logo" href="/" rel="noopener noreferrer" aria-label="logo">
+         <svg class="header__logo-icon" width="102" height="40">
+            <use href="./images/sprite.svg#icon-logo"></use>
+         </svg>
+      </a>
+      <div class="header__burger">
+         <svg class="header__burger-icon" width="69" height="25">
+            <use href="./images/sprite.svg#icon-burger"></use>
+         </svg>
+      </div>
+      <div class="header__close">
+         <svg class="header__close-icon" width="69" height="25">
+            <use href="./images/sprite.svg#icon-close"></use>
+         </svg>
+      </div>
+      <nav class="header__menu">
+         <ul class="header__menu-list list">
+            <li class="header__menu-item">
+               <a class="header__menu-link desktop" href="#products" rel="noopener noreferrer">Yolllo Products</a>
+               <a class="header__menu-link mobile" href="#products-mobile" rel="noopener noreferrer">Yolllo Products</a>
+               <img class="header__menu-item-image-mobile" src="./images/arrow.png" alt="" width="14" height="9">
+               <img class="header__menu-item-image-desktop" src="./images/arrow2.png" alt="" width="14" height="9">
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#premium" rel="noopener noreferrer">Premium</a>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#" rel="noopener noreferrer">Why Yolllo</a>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#subscriptions" rel="noopener noreferrer">Subscriptions</a>
+            </li>
+         </ul>
+         <a class="header__button" href="#" rel="noopener noreferrer">Sign in</a>
+      </nav>
+   </header>
+   <main class="main">
+      <section class="roadmap">
+         <h1 class="roadmap__title">Yolllo Strategy. Roadmap</h1>
+         <p class="roadmap__description">
+            Includes the parallel implementation of 3 planning horizons according to the Delta model
+         </p>
+         <div class="roadmap__subtitle">
+            <h2>1st horizon</h2>
+            <p>2020-2022</p>
+         </div>
+         <img class="roadmap__line-first" src="./images/line-first.png" width="2" height="75">
+         <div class="roadmap__year">2020</div>
+         <img class="roadmap__line-second" src="./images/line-second.png" width="278" height="847">
+         <svg class="roadmap__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-sun"></use>
+         </svg>
+         <div class="roadmap__block">
+            <div class="roadmap__elipse"></div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <nav class="footer__menu">
+         <div class="footer__menu-first">
+            <h3 class="footer__menu-title">Products</h3>
+            <div class="footer__menu-first-block">
+               <ul class="footer__menu-list list" id="products">
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Market</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Nft packaging</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Platform</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Virtual Back Office</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Social Club</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo DCP</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo CRM</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Vividly</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Performance</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Vividly</a>
+                  </li>
+               </ul>
+               <ul class="footer__menu-list list" id="products">
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Performance</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Ads</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Rating Mark</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Token</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer"> Worldwide payment system</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Membership Packages</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Streams of Revenue</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Loyalty and Referral Programs</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__menu-second">
+            <h3 class="footer__menu-title">Info</h3>
+            <ul class="footer__menu-list list" id="info">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Why Yolllo</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Privacy Policy</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Terms of Service</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Refund and return policy</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Contact Us</a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__menu-third">
+            <h3 class="footer__menu-title">Engage</h3>
+            <ul class="footer__menu-list list" id="engage">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Become a country leader</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Become a member of ecosystem</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">FAQ</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="footer__right">
+         <div class="footer__logo">
+            <svg class="footer__logo-icon" width="132" height="25">
+               <use href="./images/sprite.svg#icon-logo-footer"></use>
+            </svg>
+         </div>
+         <p class="footer__description">
+            <strong>Yolllo Group</strong> is a private virtual network that has unique features and has high security.
+         </p>
+         <img class="footer__icon" src="./images/Mask group.png" alt="">
+         <p class="footer__copyright">©2022 Yolllo Group</p>
+      </div>
+   </footer>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script type="text/javascript" src="./js/scripts.js" async></script>
+</body>
+
+</html>

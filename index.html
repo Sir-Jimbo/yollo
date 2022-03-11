@@ -41,7 +41,8 @@
             <li class="header__menu-item">
                <a class="header__menu-link desktop" href="#products" rel="noopener noreferrer">Yolllo Products</a>
                <a class="header__menu-link mobile" href="#products-mobile" rel="noopener noreferrer">Yolllo Products</a>
-               <img src="./images/arrow.png" alt="" width="14" height="9">
+               <img class="header__menu-item-image-mobile" src="./images/arrow.png" alt="" width="14" height="9">
+               <img class="header__menu-item-image-desktop" src="./images/arrow2.png" alt="" width="14" height="9">
             </li>
             <li class="header__menu-item">
                <a class="header__menu-link" href="#premium" rel="noopener noreferrer">Premium</a>
@@ -73,6 +74,38 @@
             <img class="hero__image" src="./images/hero.jpg" alt="">
          </picture>
       </section>
+      <section class="creator-producer">
+         <ul class="creator-producer__list">
+            <li class="creator-producer__item">
+               <div class="creator-producer__top">
+                  <h2 class="creator-producer__title">Creator</h2>
+                  <p class="creator-producer__description">
+                     Earn Fame,
+                     Recognition and Value
+                     in the simplest way!
+                  </p>
+               </div>
+               <img class="creator-producer__image-first" src="./images/creator.jpg" alt="">
+            </li>
+            <li class="creator-producer__item">
+               <div class="creator-producer__top">
+                  <h2 class="creator-producer__title">Producer</h2>
+                  <p class="creator-producer__description">
+                     Your Word decides
+                     the fate of idols.
+                     Monetize your instinct.
+                  </p>
+               </div>
+               <img class="creator-producer__image-second" src="./images/producer.jpg" alt="">
+            </li>
+         </ul>
+         <svg class="creator-producer__icon-first" width="40" height="40">
+            <use href="./images/sprite.svg#icon-ellipse"></use>
+         </svg>
+         <svg class="creator-producer__icon-second" width="25" height="25">
+            <use href="./images/sprite.svg#icon-path"></use>
+         </svg>
+      </section>
       <section class="features">
          <div class="features__block">
             <div class="features__top">
@@ -91,7 +124,7 @@
                   <use href="./images/sprite.svg#icon-path"></use>
                </svg>
             </div>
-            <svg class="features__icon" width="39" height="39">
+            <svg class="features__icon" width="40" height="40">
                <use href="./images/sprite.svg#icon-ellipse"></use>
             </svg>
          </div>
@@ -102,30 +135,24 @@
                </svg>
                <h2 class="features__item-title">Create, promote, earn value on content</h2>
                <div class="features__item-description">
-                  <p>Want get famous fast?</p>
-                  <p>Want to sell your art as expensive as possible?</p>
-                  <p>Want to build the biggest community in your region?</p>
-                  <p>Imagine to get all of this in couple clicks - with our in-app AD features.</p>
+                  <p>Yolllo Social Platform is a place where creative content creators can post their Art on one hand
+                     and on another Digital Content Produsers can promote and monetize their content for the Creator and
+                     for themselves.
+                  </p>
+                  <p>Yolllo Social Platform incorporates NFT blockchain technology to enhance user experience in
+                     creating content, protecting intellectual property rights, and most importantly monetizing creative
+                     digital content.
+                  </p>
                </div>
             </li>
             <li class="features__item">
                <svg class="features__item-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-features2"></use>
                </svg>
-               <h2 class="features__item-title">Rating Marks</h2>
+               <h2 class="features__item-title">NFT Package</h2>
                <div class="features__item-description">
                   <p>
-                     It is the main tool for evaluating the digital content, having a real value. Used for evaluation,
-                     promotion, monetization. Rating mark is equal to 100, Yolllo Tokens. 99 for producer and 1 for
-                     creator.
-                  </p>
-
-                  <p>
-                     Each Rating Mark given to the content increases its value. Both, the content creator and the
-                     digital
-                     content producer, using Rating Mark tool as their main working tool, receive revenues from each
-                     Rating
-                     Mark given.
+                     Every an each piece of content can be packaged as NFT, with no comission or cost!
                   </p>
                </div>
             </li>
@@ -133,19 +160,21 @@
                <svg class="features__item-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-features3"></use>
                </svg>
-               <h2 class="features__item-title">Create, promote, get profit</h2>
+               <h2 class="features__item-title">Yolllo Tokens</h2>
                <div class="features__item-description">
                   <p>
-                     Yolllo Social Platform is a place where creative content creators can post their Art on one hand
-                     and
-                     on another Digital Content Produsers can promote and monetize their content for the Creator and for
-                     themselves.
+                     It’s a token for internal use, used as a unified internal currency within the ecosystem and for
+                     paying revenues to Yolllo members
                   </p>
+               </div>
+               <svg class="features__item-icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-features2"></use>
+               </svg>
+               <h2 class="features__item-title">Vividly Academy</h2>
+               <div class="features__item-description">
                   <p>
-                     Yolllo Social Platform incorporates NFT blockchain technology to enhance user experience in
-                     creating
-                     content, protecting intellectual property rights, and most importantly monetizing creative digital
-                     content.
+                     We gather the greatest minds in industry to share their knowlendge with everyone who want to
+                     succseed!
                   </p>
                </div>
             </li>
@@ -153,21 +182,18 @@
                <svg class="features__item-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-features4"></use>
                </svg>
-               <h2 class="features__item-title">Userfriendly marketplace</h2>
+               <h2 class="features__item-title">Rating Marks</h2>
                <div class="features__item-description">
                   <p>
-                     We took care that even your younger sibling will easily find their eager content to own)
+                     Rating Mark is the main tool for valuing digital content.
+                     There is a limited number of rating marks (based on the subscription package) which are issued
+                     daily to our members, who assign their rating marks to specific content on our Yolllo Social
+                     Platform.
                   </p>
-               </div>
-               <svg class="features__item-icon" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-features2"></use>
-               </svg>
-               <h2 class="features__item-title">Content feed</h2>
-               <div class="features__item-description">
                   <p>
-                     We morphed all complicate features into easiest form that is possible for your comfortable
-                     adventure
-                     through our content-verse
+                     Each assigned Rating Mark increases content value. Both the content creator and the digital content
+                     producer who use the Rating Marks as their main working tool benefit from every time a Rating Mark
+                     is assigned.
                   </p>
                </div>
             </li>
@@ -175,14 +201,43 @@
                <svg class="features__item-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-features1"></use>
                </svg>
-               <h2 class="features__item-title">Yolllo Tokens</h2>
+               <h2 class="features__item-title">Userfriendly marketplace</h2>
                <div class="features__item-description">
                   <p>
-                     It's a token for internal use, used as a unified internal currency within the ecosystem and for
-                     paying
-                     revenues to Yolllo members.
+                     We took care that even your younger sibling will easily find their eager content to own)
                   </p>
-                  <p>Yolllo Token = 0,01$</p>
+               </div>
+            </li>
+            <li class="features__item">
+               <svg class="features__item-icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-features3"></use>
+               </svg>
+               <h2 class="features__item-title">Content feed</h2>
+               <div class="features__item-description">
+                  <p>
+                     We morphed all complicate features into easiest form that is possible for your comfortable
+                     adventure through our content-verse
+                  </p>
+               </div>
+            </li>
+            <li class="features__item">
+               <svg class="features__item-icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-features4"></use>
+               </svg>
+               <h2 class="features__item-title">Advertising features</h2>
+               <div class="features__item-description">
+                  <p>
+                     Want get famous fast?
+                  </p>
+                  <p>
+                     Want to sell your art as expensive as possible?
+                  </p>
+                  <p>
+                     Want to build the biggest community in your region?
+                  </p>
+                  <p>
+                     Imagine to get all of this in couple clicks - with our in-app AD features)
+                  </p>
                </div>
             </li>
          </ul>
@@ -193,7 +248,7 @@
       </section>
       <section class="possibilities">
          <div class="possibilities__left">
-            <h2 class="possibilities__title">Yolllo Social PLatform Possibilities</h2>
+            <h2 class="possibilities__title">Yolllo Social Platform Possibilities</h2>
             <div class="possibilities__description">
                Be a Critic, be a Producer, be a Leader. Earn wealth on digital art!
             </div>
@@ -260,7 +315,7 @@
                         publications per day</p>
                      <p class="subscriptions__item-description">Unlimited likes</p>
                      <p class="subscriptions__item-description">Unlimited NFT buying</p>
-                     <p class="subscriptions__item-description">Creating 6 NFT</p>
+                     <p class="subscriptions__item-description">Creating 6 NFTs</p>
                   </div>
                   <a class="subscriptions__item-link" href="#" rel="noopener noreferrer">Subscribe</a>
                </li>
@@ -272,7 +327,7 @@
                         publications per day</p>
                      <p class="subscriptions__item-description">Unlimited likes</p>
                      <p class="subscriptions__item-description">Unlimited NFT buying</p>
-                     <p class="subscriptions__item-description">Creating 12 NFT</p>
+                     <p class="subscriptions__item-description">Creating 12 NFTs</p>
                   </div>
                   <a class="subscriptions__item-link" href="#" rel="noopener noreferrer">Subscribe</a>
                </li>
@@ -292,7 +347,7 @@
                </svg>
             </div>
             <a class="capabilities__link desktop" href="#" rel="noopener noreferrer">
-               <span class="capabilities__link-text">Get free quote</span>
+               <span class="capabilities__link-text">I’m in</span>
                <svg class="capabilities__link-icon" width="33" height="17">
                   <use href="./images/sprite.svg#icon-arrow"></use>
                </svg>
@@ -318,7 +373,7 @@
       <section class="opportunity" id="premium">
          <div class="opportunity__left">
             <h2 class="opportunity__title">
-               This is great opportunity you’ll might regret to miss
+               This is great opportunity you’ll might regret to be last to join.
             </h2>
             <div class="opportunity__description">
                <svg class="opportunity__description-icon" width="40" height="40">
@@ -333,11 +388,13 @@
             <div class="opportunity__text">
                <p>
                   Start your “new game+” with Yolllo Business.
-               </p>
-               <p>
                   Become an even more successful professional with our business tools that’ll put your skills to 80lvl!
                   Feel the support of our leaders that’ll hold your back day’n’night!
                   Grow your own network with the best professionals all over the world!
+               </p>
+               <p>
+                  You name the rules, we help you to earn more, day by day!
+                  Fill free to buy and sell digital art content on Yolllo Social Platform.
                </p>
             </div>
             <a class="opportunity__link" href="#" rel="noopener noreferrer">
@@ -358,7 +415,7 @@
                Software, lectures, master classes, real practice, all of that is your to use for your success!
             </p>
             <a class="education__link" href="#" rel="noopener noreferrer">
-               <span class="education__link-text">Details</span>
+               <span class="education__link-text">Contact us for details</span>
                <svg class="education__link-icon" width="33" height="17">
                   <use href="./images/sprite.svg#icon-arrow2"></use>
                </svg>
@@ -382,8 +439,7 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        we have built a unique (which means we are distancing ourselves from competitors) best service -
-                        Yolllo Social Platform (the core of the company)
+                        we created a unique and best of a kind service - yolllo social platform
                      </p>
                   </li>
                   <li>
@@ -391,12 +447,11 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        we have built a unique (which means we are distancing ourselves from competitors) best service -
-                        Yolllo Social Platform (the core of the company)
+                        achieved operational sustainability, planned market share and financial indicators
                      </p>
                   </li>
                </ul>
-               <a class="strategy__item-link" href="#" rel="noopener noreferrer">
+               <a class="strategy__item-link" href="./roadmap.html" rel="noopener noreferrer">
                   <span class="strategy__item-link-text">View full roadmap</span>
                   <svg class="strategy__item-link-icon" width="33" height="17">
                      <use href="./images/sprite.svg#icon-arrow"></use>
@@ -414,9 +469,9 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        developed comprehensive solutions for the consumer - Yolllo:
-                        Digital Content Producer, NFT Packaging, Virtual Back O!ice, Social Club, Business, CRM, Vividly
-                        Education, Happiness app, Yolllo ads, Rating Mark, Utility token, Payment system Yo Pay
+                        Developed complex solutions for consumer:
+                         Yolllo, digital content producer, NFT packaging, Virtual back office, Social club, Business
+                        CRM, Vividly Education, Happiness App, Yolllo ads, Rating Mark, Token, Payment system YoPay
                      </p>
                   </li>
                   <li>
@@ -424,11 +479,11 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        expanded the project geography
+                        expanded the geo coverage of the project
                      </p>
                   </li>
                </ul>
-               <a class="strategy__item-link" href="#" rel="noopener noreferrer">
+               <a class="strategy__item-link" href="./roadmap.html" rel="noopener noreferrer">
                   <span class="strategy__item-link-text">View full roadmap</span>
                   <svg class="strategy__item-link-icon" width="33" height="17">
                      <use href="./images/sprite.svg#icon-arrow"></use>
@@ -446,7 +501,7 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        innovation at the state of technology
+                        tech innovations
                      </p>
                   </li>
                   <li>
@@ -454,7 +509,7 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        achieved market dominance
+                        reached market domination
                      </p>
                   </li>
                   <li>
@@ -462,11 +517,11 @@
                         <use href="./images/sprite.svg#icon-possibilities"></use>
                      </svg>
                      <p class="strategy__item-description">
-                        system lock - Yolllo Ecosystem
+                        system lock - Yolllo ecosystem
                      </p>
                   </li>
                </ul>
-               <a class="strategy__item-link" href="#" rel="noopener noreferrer">
+               <a class="strategy__item-link" href="./roadmap.html" rel="noopener noreferrer">
                   <span class="strategy__item-link-text">View full roadmap</span>
                   <svg class="strategy__item-link-icon" width="33" height="17">
                      <use href="./images/sprite.svg#icon-arrow"></use>
@@ -555,9 +610,10 @@
                </li>
                <li class="question__item swiper-slide">
                   <h3 class="question__item-title">Vividly</h3>
-                  <p class="question__item-description">Software, lectures, master classes, real practice, all of that
-                     is
-                     your to use for your success!</p>
+                  <p class="question__item-description">
+                     Software, lectures, master classes, real practice, all of that
+                     is your to use for your success!
+                  </p>
                   <a class="question__item-link" href="#" rel="noopener noreferrer">
                      <span class="question__item-link-text">Read more</span>
                      <svg class="question__item-link-icon" width="33" height="17">

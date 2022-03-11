@@ -163,4 +163,17 @@
          display: inline-flex;
       }
    }
+
+   &__menu-item-image-mobile {
+      @media screen and (min-width: 1024px) {
+         display: none;
+      }
+   }
+
+   &__menu-item-image-desktop {
+      display: none;
+      @media screen and (min-width: 1024px) {
+         display: block;
+      }
+   }
 }
