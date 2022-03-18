@@ -391,8 +391,9 @@ a {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .hero__title {
+    font-size: 45px;
     margin-bottom: 35px;
   }
 }
