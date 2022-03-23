@@ -2622,13 +2622,42 @@ a {
   margin-bottom: 120px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap {
+    padding: 0 30px;
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap {
+    padding: 0 120px;
+    max-width: 1280px;
+  }
+}
+
 .roadmap__title {
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__title {
+    font-size: 40px;
+    line-height: 1.05;
+  }
 }
 
 .roadmap__description {
   margin-top: 0;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__description {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .roadmap__subtitle {
@@ -2641,10 +2670,37 @@ a {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 602px;
+    padding: 30px 158px;
+    border-radius: 0 50px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+  }
+}
+
 .roadmap__subtitle h2 {
   font-size: 30px;
   line-height: 1;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__subtitle h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .roadmap__subtitle p {
@@ -2653,8 +2709,31 @@ a {
   margin: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__subtitle p {
+    font-size: 22px;
+    line-height: 1.36;
+  }
+}
+
 .roadmap__line-first {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-first {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-first {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-first {
+    display: block;
+  }
 }
 
 .roadmap__year {
@@ -2665,6 +2744,28 @@ a {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__year {
+    position: absolute;
+    margin: 0;
+    top: 6.6%;
+    left: 7.5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year {
+    padding: 25px 50px;
+    border-radius: 0px 50px;
+    border: 4px solid #ed6a32;
+    font-size: 40px;
+    line-height: 1.05;
+    top: 6%;
+    left: 15%;
+  }
 }
 
 .roadmap__line-second {
@@ -2676,11 +2777,40 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-second {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon, .roadmap__icon2, .roadmap__icon3, .roadmap__right-block, .roadmap__left-block, .roadmap__cycle, .roadmap__cycle-3, .roadmap__text {
+    position: absolute;
+    margin: 0 !important;
+  }
+}
+
 .roadmap__icon {
   display: block;
   margin-top: 50px;
   margin-left: 50px;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon {
+    top: 4.36%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon {
+    width: 70px;
+    height: 70px;
+    top: 4%;
+    left: 9%;
+  }
 }
 
 .roadmap__left-block {
@@ -2702,6 +2832,19 @@ a {
   z-index: 1;
   background: #ffffff;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__elipse {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__elipse {
+    border: 4px solid #ed6a32;
+  }
 }
 
 .roadmap__cloud {
@@ -2735,8 +2878,174 @@ a {
   border-bottom: 2px solid #ed6a32;
 }
 
+@media screen and (min-width: 1280px) {
+  .roadmap__cloud-title {
+    font-size: 22px;
+    line-height: 1.36;
+  }
+}
+
 .roadmap__cloud-description {
   padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1, .roadmap__left-block.desktop-27, .roadmap__left-block.desktop-29 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1, .roadmap__left-block.desktop-27 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-29 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1 .roadmap__cloud,
+  .roadmap__left-block.desktop-27 .roadmap__cloud,
+  .roadmap__left-block.desktop-29 .roadmap__cloud {
+    margin-bottom: 25px;
+    width: 395px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-1 .roadmap__cloud,
+  .roadmap__left-block.desktop-27 .roadmap__cloud,
+  .roadmap__left-block.desktop-29 .roadmap__cloud {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-1 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-27 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-27 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-29 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-29 .roadmap__cloud::after {
+    bottom: -40px;
+    border: none;
+    top: unset;
+    border: 20px solid transparent;
+    border-top: 20px solid #ed6a32;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-1 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-27 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-27 .roadmap__cloud::after {
+    right: 18px;
+    left: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-29 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-29 .roadmap__cloud::after {
+    left: 25px;
+    right: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-27 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-29 .roadmap__cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1 .roadmap__elipse,
+  .roadmap__left-block.desktop-27 .roadmap__elipse {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-29 .roadmap__elipse {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-1 {
+    top: 4.36%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-1 {
+    top: 4%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-27 {
+    top: 51.7%;
+    left: 2%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-27 {
+    top: 51.6%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-27 {
+    top: 51.7%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-27 {
+    top: 51.6%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-29 {
+    top: 53.5%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-29 {
+    top: 53.5%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-29 {
+    left: 57%;
+  }
 }
 
 .roadmap__cycle {
@@ -2751,6 +3060,31 @@ a {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 1280px) {
+  .roadmap__cycle {
+    border: 4px solid #ed6a32;
+    border-radius: 50px;
+    padding: 28px 59px;
+    font-size: 22px;
+    line-height: 1.36;
+    width: 225px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__cycle.desktop-1 {
+    top: 6.6%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__cycle.desktop-1 {
+    top: 6.1%;
+    left: 50%;
+  }
+}
+
 .roadmap__text {
   font-size: 18px;
   font-weight: 700;
@@ -2761,43 +3095,51 @@ a {
   background: #ffffff;
 }
 
+@media screen and (min-width: 1280px) {
+  .roadmap__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__text.desktop-1 {
+    left: 46%;
+    top: 7.5%;
+    max-width: 345px;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__text.desktop-1 {
+    top: 7.2%;
+  }
+}
+
 .roadmap__icon2 {
   display: block;
   margin-left: 10px;
   margin-bottom: 5px;
 }
 
-.roadmap__right-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
-.roadmap__right-cloud {
-  position: relative;
-  border: 2px solid #ed6a32;
-  border-radius: 0px 20px;
-  width: 265px;
-  min-height: 115px;
-  text-align: left;
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-2 {
+    top: 4.8%;
+    left: 50%;
+  }
 }
 
-.roadmap__right-cloud::before, .roadmap__right-cloud::after {
-  content: "";
-  position: absolute;
-  right: -20px;
-  top: 43%;
-  border: 10px solid transparent;
-  border-left: 10px solid #ed6a32;
-}
-
-.roadmap__right-cloud::after {
-  border-left: 10px solid white;
-  right: -18px;
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-2 {
+    top: 4.6%;
+  }
 }
 
 .roadmap__right-block {
@@ -2811,6 +3153,95 @@ a {
   padding-left: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-2 {
+    top: 4.8%;
+    left: 55%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-2 {
+    top: 4.6%;
+  }
+}
+
+.roadmap__right-cloud {
+  position: relative;
+  border: 2px solid #ed6a32;
+  border-radius: 0px 20px;
+  width: 265px;
+  min-height: 115px;
+  text-align: left;
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-cloud {
+    border-radius: 0px 30px;
+  }
+}
+
+.roadmap__right-cloud::before, .roadmap__right-cloud::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 43%;
+  border: 10px solid transparent;
+  border-left: 10px solid #ed6a32;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-cloud::before, .roadmap__right-cloud::after {
+    right: -40px;
+    border: 20px solid transparent;
+  }
+}
+
+.roadmap__right-cloud::after {
+  border-left: 10px solid white;
+  right: -18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-cloud::after {
+    right: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-2 .roadmap__right-cloud {
+    margin-bottom: 45px;
+    width: 395px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-2 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-2 .roadmap__right-cloud::after {
+    bottom: -40px;
+    right: 18px;
+    border: none;
+    left: unset;
+    top: unset;
+    border: 20px solid transparent;
+    border-top: 20px solid #ed6a32;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-2 .roadmap__right-cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
+}
+
 .roadmap__right-elipse {
   width: 20px;
   height: 20px;
@@ -2820,6 +3251,86 @@ a {
   z-index: 1;
   background: #ffffff;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-elipse {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-elipse {
+    border: 4px solid #ed6a32;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-2 .roadmap__right-elipse {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-3 {
+    top: 8.5%;
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-3 {
+    left: 49%;
+    top: 8.2%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-3 {
+    top: 8.5%;
+    left: unset;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-3 {
+    right: 7%;
+    top: 8.2%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-3 .roadmap__right-cloud {
+    width: 395px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-3 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-3 .roadmap__right-cloud::after {
+    right: -40px;
+    top: 45%;
+    border: none;
+    border: 20px solid transparent;
+    border-left: 20px solid #ed6a32;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-3 .roadmap__right-cloud::after {
+    border-left: 20px solid white;
+    right: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-3 .roadmap__right-elipse {
+    margin-right: 12px;
+    margin-top: 20px;
+  }
 }
 
 .roadmap__year2 {
@@ -2834,6 +3345,27 @@ a {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year2 {
+    position: absolute;
+    top: 10.5%;
+    left: 66%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year2 {
+    padding: 25px 50px;
+    border-radius: 50px 0px;
+    border: 4px solid #7f4bdc;
+    font-size: 40px;
+    line-height: 1.05;
+    top: 10%;
+    left: 64%;
+  }
+}
+
 .roadmap__line-third {
   position: absolute;
   top: 9.8%;
@@ -2841,8 +3373,33 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-third {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-second {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-second {
+    display: block;
+    position: relative;
+    margin-top: -3px;
+    z-index: -1;
+  }
+}
+
 .roadmap .border-2 {
   border: 2px solid #7f4bdc;
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__elipse.border-2, .roadmap__right-elipse.border-2 {
+    border: 4px solid #7f4bdc;
+  }
 }
 
 .roadmap .color-2 {
@@ -2867,13 +3424,131 @@ a {
   margin-bottom: 5px;
 }
 
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3 {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-4 {
+    top: 7.93%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-4 {
+    top: 7.8%;
+    left: 8%;
+  }
+}
+
 .roadmap__left-block.bottom {
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.bottom {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-4 {
+    top: 7.93%;
+    left: 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-4 {
+    top: 7.8%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-4 .roadmap__cloud {
+    width: 395px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-4 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-4 .roadmap__cloud::after {
+    bottom: -40px;
+    right: 18px;
+    border: none;
+    left: unset;
+    top: unset;
+    border: 20px solid transparent;
+    border-top: 20px solid #7f4bdc;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-4 .roadmap__cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
 }
 
 .roadmap .border-3 {
   border: 2px solid #7f4bdc;
   border-radius: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap .border-3 {
+    border: 4px solid #7f4bdc;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-4 .roadmap__elipse {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__cycle.desktop-4 {
+    top: 11.5%;
+    left: 8%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__cycle.desktop-4 {
+    top: 11%;
+    left: 12%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__text.desktop-4 {
+    top: 12.5%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__text.desktop-4 {
+    top: 12.2%;
+    left: 11%;
+  }
 }
 
 .roadmap__right-cloud.border-2::before, .roadmap__right-cloud.border-2::after {
@@ -2884,14 +3559,372 @@ a {
   border-left: 10px solid white;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__right-cloud.border-2::after {
+    border-left: 20px solid white;
+  }
+}
+
 .roadmap .right-bottom {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-4, .roadmap__right-block.desktop-31 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-4 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-31 .roadmap__right-cloud {
+    width: 395px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-4 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-4 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-31 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-31 .roadmap__right-cloud::after {
+    bottom: -40px;
+    left: 20px;
+    top: unset;
+    right: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-top: 20px solid #7f4bdc;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-4 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-31 .roadmap__right-cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-4 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-31 .roadmap__right-elipse {
+    margin-left: 23px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-4 {
+    top: 12.2%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-4 {
+    top: 12.05%;
+    left: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-4 {
+    top: 12.2%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-4 {
+    top: 12.05%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-31 {
+    top: 58.5%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-31 {
+    top: 58.75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-31 {
+    top: 58.5%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-31 {
+    top: 58.75%;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-5 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-6 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-8 .roadmap__right-cloud {
+    width: 395px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-5 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-5 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-6 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-6 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-8 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-8 .roadmap__right-cloud::after {
+    bottom: -40px;
+    right: 18px;
+    border: none;
+    left: unset;
+    top: unset;
+    border: 20px solid transparent;
+    border-top: 20px solid #7f4bdc;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-5 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-6 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-8 .roadmap__right-cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-5 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-6 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-8 .roadmap__right-elipse {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-5 {
+    top: 14.8%;
+    left: 46%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-5 {
+    top: 14.7%;
+    left: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-5 {
+    top: 14.8%;
+    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-5 {
+    top: 14.7%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-6 {
+    top: 14.8%;
+    left: 2%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-6 {
+    top: 14.7%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-6 {
+    top: 14.8%;
+    left: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-6 {
+    top: 14.7%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-7 {
+    top: 17.3%;
+    left: 4.5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-7 {
+    top: 17.1%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-7 {
+    top: 17.3%;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-7 {
+    top: 17.1%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-7 .roadmap__right-cloud {
+    width: 395px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-7 .roadmap__right-cloud {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-7 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-7 .roadmap__right-cloud::after {
+    left: -40px;
+    top: 70%;
+    right: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-right: 20px solid #7f4bdc;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-7 .roadmap__right-cloud::after {
+    border-right: 20px solid white;
+    left: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-7 .roadmap__right-elipse {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-8 {
+    top: 18%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-8 {
+    top: 17.95%;
+    left: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-8 {
+    top: 18%;
+    left: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-8 {
+    top: 17.95%;
+  }
 }
 
 .roadmap .background-2 {
   margin-top: 40px;
   background: #fe446f;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap .background-2 {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+  }
 }
 
 .roadmap__line-dotted {
@@ -2901,6 +3934,24 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-dotted {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-dotted, .roadmap__line-desktop-dotted-2 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-dotted, .roadmap__line-desktop-dotted-2 {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
 .roadmap__line-dotted-2 {
   position: absolute;
   left: 20px;
@@ -2908,11 +3959,33 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-dotted-2 {
+    display: none;
+  }
+}
+
 .roadmap__line-four {
   position: absolute;
   left: 20px;
   top: 23.65%;
   z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-four {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-3 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-3 {
+    display: block;
+  }
 }
 
 .roadmap .border-4 {
@@ -2931,6 +4004,12 @@ a {
   margin-left: 11px;
 }
 
+@media screen and (min-width: 1280px) {
+  .roadmap__elipse.border-4 {
+    border: 4px solid #fe446f;
+  }
+}
+
 .roadmap__cloud.border-4::before, .roadmap__cloud.border-4::after {
   border-right: 10px solid #fe446f;
 }
@@ -2941,6 +4020,606 @@ a {
 
 .roadmap .cloud-bottom-2 {
   border-bottom: 2px solid #fe446f;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-39 {
+    top: 83.7%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-39 {
+    left: 23%;
+    top: 83.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-39 {
+    top: 82.95%;
+    left: 25%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-39 {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-40 {
+    top: 86.85%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-40 {
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-40 {
+    top: 86.15%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-40 {
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-41 {
+    top: 86.85%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-41 {
+    top: 86.8%;
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-41 {
+    top: 86.15%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-42 {
+    top: 89.4%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-42 {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-42 {
+    top: 88.7%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-42 {
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-43 {
+    top: 89.4%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-43 {
+    top: 88.7%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-43 {
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-39, .roadmap__left-block.desktop-40, .roadmap__left-block.desktop-41, .roadmap__left-block.desktop-42, .roadmap__left-block.desktop-43 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-39 .roadmap__cloud,
+  .roadmap__left-block.desktop-40 .roadmap__cloud,
+  .roadmap__left-block.desktop-41 .roadmap__cloud,
+  .roadmap__left-block.desktop-42 .roadmap__cloud,
+  .roadmap__left-block.desktop-43 .roadmap__cloud {
+    width: 395px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-39 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-39 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-40 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-40 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-41 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-41 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-42 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-42 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-43 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-43 .roadmap__cloud::after {
+    top: -40px;
+    right: 25px;
+    border: none;
+    left: unset;
+    bottom: unset;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #fe446f;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-39 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-40 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-41 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-42 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-43 .roadmap__cloud::after {
+    border-bottom: 20px solid white;
+    top: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-39 .roadmap__elipse,
+  .roadmap__left-block.desktop-40 .roadmap__elipse,
+  .roadmap__left-block.desktop-41 .roadmap__elipse,
+  .roadmap__left-block.desktop-42 .roadmap__elipse,
+  .roadmap__left-block.desktop-43 .roadmap__elipse {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9, .roadmap__left-block.desktop-10, .roadmap__left-block.desktop-12, .roadmap__left-block.desktop-13, .roadmap__left-block.desktop-32, .roadmap__left-block.desktop-34, .roadmap__left-block.desktop-44, .roadmap__left-block.desktop-45 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9, .roadmap__left-block.desktop-10, .roadmap__left-block.desktop-12, .roadmap__left-block.desktop-13 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-32, .roadmap__left-block.desktop-34, .roadmap__left-block.desktop-44, .roadmap__left-block.desktop-45 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9 .roadmap__cloud,
+  .roadmap__left-block.desktop-10 .roadmap__cloud,
+  .roadmap__left-block.desktop-12 .roadmap__cloud,
+  .roadmap__left-block.desktop-13 .roadmap__cloud,
+  .roadmap__left-block.desktop-32 .roadmap__cloud,
+  .roadmap__left-block.desktop-34 .roadmap__cloud,
+  .roadmap__left-block.desktop-44 .roadmap__cloud,
+  .roadmap__left-block.desktop-45 .roadmap__cloud {
+    width: 395px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-9 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-10 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-10 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-12 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-12 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-13 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-13 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-32 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-32 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-34 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-34 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-44 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-44 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-45 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-45 .roadmap__cloud::after {
+    bottom: -40px;
+    border: none;
+    top: unset;
+    border: 20px solid transparent;
+    border-top: 20px solid #fe446f;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-9 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-10 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-10 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-12 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-12 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-13 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-13 .roadmap__cloud::after {
+    right: 18px;
+    left: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-32 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-32 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-34 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-34 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-44 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-44 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-45 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-45 .roadmap__cloud::after {
+    left: 25px;
+    right: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-10 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-12 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-13 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-32 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-34 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-44 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-45 .roadmap__cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9 .roadmap__elipse,
+  .roadmap__left-block.desktop-10 .roadmap__elipse,
+  .roadmap__left-block.desktop-12 .roadmap__elipse,
+  .roadmap__left-block.desktop-13 .roadmap__elipse {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-32 .roadmap__elipse,
+  .roadmap__left-block.desktop-34 .roadmap__elipse,
+  .roadmap__left-block.desktop-44 .roadmap__elipse,
+  .roadmap__left-block.desktop-45 .roadmap__elipse {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-9 {
+    top: 24.25%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-9 {
+    top: 24.05%;
+    left: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-9 {
+    top: 24.25%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-9 {
+    top: 24.05%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-10 {
+    top: 23.95%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-10 {
+    top: 23.75%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-10 {
+    top: 23.95%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-10 {
+    top: 23.75%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-12 {
+    top: 28.5%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-12 {
+    top: 28.3%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-12 {
+    top: 28.5%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-12 {
+    top: 28.3%;
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-13 {
+    top: 28.7%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-13 {
+    top: 28.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-13 {
+    top: 28.7%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-13 {
+    top: 28.5%;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-32 {
+    top: 62.67%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-32 {
+    top: 62.9%;
+    left: 13%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-32 {
+    top: 62.67%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-32 {
+    top: 62.9%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-34 {
+    top: 65%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-34 {
+    top: 65.3%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-34 {
+    top: 65%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-34 {
+    top: 65.3%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-44 {
+    top: 91.3%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-44 {
+    top: 91.6%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-44 {
+    top: 91.3%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-44 {
+    top: 91.6%;
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-45 {
+    top: 91.6%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-45 {
+    top: 91.6%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-45 {
+    top: 91.9%;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-11 {
+    top: 26.5%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-11 {
+    left: 11%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-11 {
+    top: 26.5%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-11 {
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-11 .roadmap__cloud {
+    width: 395px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-11 .roadmap__cloud {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-11 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-11 .roadmap__cloud::after {
+    left: -40px;
+    top: 55%;
+    right: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-right: 20px solid #fe446f;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-11 .roadmap__cloud::after {
+    border-right: 20px solid white;
+    left: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-11 .roadmap__elipse {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.bottom-2.desktop-9, .roadmap__left-block.bottom-2.desktop-10, .roadmap__left-block.bottom-2.desktop-11, .roadmap__left-block.bottom-2.desktop-12, .roadmap__left-block.bottom-2.desktop-13 {
+    margin: 0;
+  }
 }
 
 .roadmap__year3 {
@@ -2955,8 +4634,35 @@ a {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year3 {
+    position: absolute;
+    margin: 0;
+    top: 33.6%;
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year3 {
+    padding: 25px 50px;
+    border-radius: 0px 50px;
+    border: 4px solid #fe446f;
+    font-size: 40px;
+    line-height: 1.05;
+    top: 33.2%;
+    left: 65%;
+  }
+}
+
 .roadmap__left-block.bottom-2 {
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.bottom-2 {
+    margin: 0;
+  }
 }
 
 .roadmap__line-five {
@@ -2964,6 +4670,23 @@ a {
   top: 31.59%;
   right: 21px;
   z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-five {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-4 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-4 {
+    display: block;
+    margin-top: -3px;
+  }
 }
 
 .roadmap .border-5 {
@@ -2974,6 +4697,12 @@ a {
   border-radius: 0 20px;
 }
 
+@media screen and (min-width: 1280px) {
+  .roadmap__right-elipse.border-5 {
+    border: 4px solid #24c4d5;
+  }
+}
+
 .roadmap .color-5 {
   color: #24c4d5;
 }
@@ -2982,8 +4711,20 @@ a {
   border-left: 10px solid #24c4d5;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__right-cloud.border-5::before, .roadmap__right-cloud.border-5::after {
+    border-left: 20px solid #24c4d5;
+  }
+}
+
 .roadmap__right-cloud.border-5::after {
   border-left: 10px solid white;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-cloud.border-5::after {
+    border-left: 20px solid white;
+  }
 }
 
 .roadmap .cloud-bottom-3 {
@@ -3002,6 +4743,801 @@ a {
   margin-bottom: 17px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.right-bottom-3 {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14, .roadmap__right-block.desktop-17, .roadmap__right-block.desktop-21, .roadmap__right-block.desktop-23, .roadmap__right-block.desktop-25, .roadmap__right-block.desktop-36, .roadmap__right-block.desktop-38, .roadmap__right-block.desktop-46, .roadmap__right-block.desktop-47, .roadmap__right-block.desktop-48 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14, .roadmap__right-block.desktop-17, .roadmap__right-block.desktop-21, .roadmap__right-block.desktop-23, .roadmap__right-block.desktop-25 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-36, .roadmap__right-block.desktop-38, .roadmap__right-block.desktop-46, .roadmap__right-block.desktop-47, .roadmap__right-block.desktop-48 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-17 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-21 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-23 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-25 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-36 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-38 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-46 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-47 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-48 .roadmap__right-cloud {
+    width: 395px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-14 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-17 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-17 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-21 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-21 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-23 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-23 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-25 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-25 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-36 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-36 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-38 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-38 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-46 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-46 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-47 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-47 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-48 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-48 .roadmap__right-cloud::after {
+    bottom: -40px;
+    border: none;
+    top: unset;
+    border: 20px solid transparent;
+    border-top: 20px solid #24c4d5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-14 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-17 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-17 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-21 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-21 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-23 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-23 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-25 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-25 .roadmap__right-cloud::after {
+    right: 18px;
+    left: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-36 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-36 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-38 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-38 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-46 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-46 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-47 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-47 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-48 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-48 .roadmap__right-cloud::after {
+    left: 25px;
+    right: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-17 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-21 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-23 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-25 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-36 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-38 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-46 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-47 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-48 .roadmap__right-cloud::after {
+    border-top: 20px solid white;
+    bottom: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-17 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-21 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-23 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-25 .roadmap__right-elipse {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-36 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-38 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-46 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-47 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-48 .roadmap__right-elipse {
+    margin-left: 27px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-14 {
+    top: 32.2%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-14 {
+    left: 19%;
+    top: 32.1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-14 {
+    top: 32.2%;
+    left: 25%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-14 {
+    top: 32.1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-17 {
+    top: 35.88%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-17 {
+    top: 35.8;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-17 {
+    top: 35.88%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-17 {
+    top: 35.8%;
+    left: 56%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-21 {
+    top: 39.15%;
+    left: 2%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-21 {
+    top: 40.15%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-21 {
+    top: 39.15%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-21 {
+    top: 40.15%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-23 {
+    top: 42.65%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-23 {
+    top: 42.7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-23 {
+    top: 42.65%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-23 {
+    top: 42.7%;
+    left: 56%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-25 {
+    top: 46.65%;
+    left: 2%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-25 {
+    top: 46.75%;
+    left: 9%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-25 {
+    top: 46.65%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-25 {
+    top: 46.75%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-36 {
+    top: 71.2%;
+    left: 52%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-36 {
+    top: 71.5%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-36 {
+    top: 71.2%;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-36 {
+    top: 71.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-38 {
+    top: 74.45%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-38 {
+    top: 74.8%;
+    left: 11%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-38 {
+    top: 74.45%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-38 {
+    top: 74.8%;
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-46 {
+    top: 94.15%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-46 {
+    top: 94.45%;
+    left: 19%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-46 {
+    top: 94.15%;
+    left: 25%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-46 {
+    top: 94.45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-47 {
+    top: 97.05%;
+    left: 3.5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-47 {
+    top: 97.2%;
+    left: 11%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-47 {
+    top: 97.05%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-47 {
+    top: 97.2%;
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-48 {
+    top: 97.05%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-48 {
+    top: 97.2%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-48 {
+    top: 97.05%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-48 {
+    top: 97.2%;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-15, .roadmap__right-block.desktop-35 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-15 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-35 .roadmap__right-cloud {
+    width: 395px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-15 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-15 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-35 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-35 .roadmap__right-cloud::after {
+    top: -40px;
+    right: 20px;
+    border: none;
+    left: unset;
+    bottom: unset;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #24c4d5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-15 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-35 .roadmap__right-cloud::after {
+    border-bottom: 20px solid white;
+    top: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-15 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-35 .roadmap__right-elipse {
+    margin-right: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-15 {
+    top: 34.4%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-15 {
+    top: 34.15%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-15 {
+    top: 33.7%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-15 {
+    top: 33.5%;
+    left: 16%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-35 {
+    top: 70.75%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-35 {
+    top: 71%;
+    left: 11%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-35 {
+    top: 70.05%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-35 {
+    top: 70.3%;
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-16 {
+    top: 35.7%;
+    left: 4%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-16 {
+    top: 35.5%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-16 {
+    top: 35.7%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-16 {
+    top: 35.5%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-22 {
+    top: 42.8%;
+    left: 4%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-22 {
+    top: 42.6%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-22 {
+    top: 42.8%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-22 {
+    top: 42.6%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-16, .roadmap__right-block.desktop-22 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-16 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-22 .roadmap__right-cloud {
+    width: 395px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-16 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-22 .roadmap__right-cloud {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-16 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-16 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-22 .roadmap__right-cloud::before,
+  .roadmap__right-block.desktop-22 .roadmap__right-cloud::after {
+    left: -40px;
+    top: 55%;
+    right: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-right: 20px solid #24c4d5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-16 .roadmap__right-cloud::after,
+  .roadmap__right-block.desktop-22 .roadmap__right-cloud::after {
+    border-right: 20px solid white;
+    left: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-16 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-22 .roadmap__right-elipse {
+    margin: 0;
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-18 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-19 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-20 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-24 .roadmap__right-cloud,
+  .roadmap__right-block.desktop-37 .roadmap__right-cloud {
+    width: 395px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-18 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-19 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-20 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-24 .roadmap__right-elipse,
+  .roadmap__right-block.desktop-37 .roadmap__right-elipse {
+    margin-top: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-18 {
+    top: 37.8%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-18 {
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-18 {
+    top: 37.8%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-18 {
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-19 {
+    top: 39.3%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-19 {
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-19 {
+    top: 39.3%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-19 {
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-20 {
+    top: 40.6%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-20 {
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-20 {
+    top: 40.6%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-20 {
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-24 {
+    top: 46.1%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-24 {
+    top: 46%;
+    left: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-24 {
+    top: 46.1%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-24 {
+    top: 46%;
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon2.desktop-37 {
+    top: 73.6%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon2.desktop-37 {
+    top: 73.9%;
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__right-block.desktop-37 {
+    top: 73.6%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__right-block.desktop-37 {
+    top: 73.9%;
+    right: 7%;
+  }
+}
+
 .roadmap__cycle-3 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3017,6 +5553,26 @@ a {
   margin-bottom: 85px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__cycle-3 {
+    padding: 28px 53px;
+    max-width: 420px;
+    top: 50.1%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__cycle-3 {
+    border: 4px solid #24c4d5;
+    border-radius: 50px;
+    font-size: 22px;
+    line-height: 1.36;
+    padding: 28px 45px;
+    left: 15%;
+  }
+}
+
 .roadmap__year4 {
   display: inline-block;
   padding: 18px 55px;
@@ -3029,6 +5585,27 @@ a {
   margin-bottom: 70px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year4 {
+    position: absolute;
+    margin: 0;
+    top: 50.3%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year4 {
+    padding: 25px 50px;
+    border-radius: 50px 0px;
+    border: 4px solid #ed6a32;
+    font-size: 40px;
+    line-height: 1.05;
+    top: 50.1%;
+    left: 54%;
+  }
+}
+
 .roadmap__line-six {
   position: absolute;
   top: 51.65%;
@@ -3036,8 +5613,202 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-six {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-5 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-5 {
+    display: block;
+    margin-top: -3px;
+  }
+}
+
 .roadmap .background-5 {
   fill: #ed6a32;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-26 {
+    top: 51.3%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-26 {
+    top: 51.5%;
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-26 {
+    top: 51.3%;
+    right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-26 {
+    top: 51.5%;
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-26 .roadmap__cloud {
+    width: 395px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-26 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-26 .roadmap__cloud::after {
+    right: -40px;
+    top: 55%;
+    left: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-left: 20px solid #ed6a32;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-26 .roadmap__cloud::after {
+    border-left: 20px solid white;
+    right: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-26 .roadmap__elipse {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28, .roadmap__left-block.desktop-30 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28 .roadmap__cloud,
+  .roadmap__left-block.desktop-30 .roadmap__cloud {
+    width: 395px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-28 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-30 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-30 .roadmap__cloud::after {
+    top: -40px;
+    left: unset;
+    bottom: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #ed6a32;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-28 .roadmap__cloud::after {
+    right: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-30 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-30 .roadmap__cloud::after {
+    right: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28 .roadmap__cloud::after,
+  .roadmap__left-block.desktop-30 .roadmap__cloud::after {
+    border-bottom: 20px solid white;
+    top: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28 .roadmap__elipse {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-30 .roadmap__elipse {
+    margin-right: 0;
+    margin-left: 38%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-28 {
+    top: 53.9%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-28 {
+    left: 11%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-28 {
+    top: 53.2%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-28 {
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-30 {
+    top: 56%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-30 {
+    top: 55.25%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-30 {
+    top: 55.3%;
+    left: 57%;
+  }
 }
 
 .roadmap__year5 {
@@ -3053,11 +5824,48 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year5 {
+    position: absolute;
+    margin: 0;
+    top: 57.65%;
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year5 {
+    padding: 25px 50px;
+    border-radius: 0px 50px;
+    border: 4px solid #ed6a32;
+    font-size: 40px;
+    line-height: 1.05;
+    top: 57.55%;
+  }
+}
+
 .roadmap__line-seven {
   position: absolute;
   top: 59.35%;
   left: 21px;
   z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-seven {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-6 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-6 {
+    display: block;
+    margin-top: -3px;
+  }
 }
 
 .roadmap__text.color-6 {
@@ -3068,11 +5876,43 @@ a {
   margin-bottom: 75px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__text.color-6 {
+    max-width: 365px;
+    top: 57.2%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__text.color-6 {
+    left: 17%;
+  }
+}
+
 .roadmap__cycle.border-6 {
   border: 2px solid #7f4bdc;
   padding: 16px 17px;
   width: 185px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__cycle.border-6 {
+    top: 61.6%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__cycle.border-6 {
+    width: 336px;
+    border: 4px solid #7f4bdc;
+    border-radius: 50px;
+    font-size: 22px;
+    line-height: 1.36;
+    padding: 28px 45px;
+  }
 }
 
 .roadmap__year6 {
@@ -3087,11 +5927,111 @@ a {
   margin-bottom: 65px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year6 {
+    position: absolute;
+    margin: 0;
+    top: 61.6%;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year6 {
+    padding: 25px 50px;
+    border-radius: 50px 0px;
+    border: 4px solid #7f4bdc;
+    font-size: 40px;
+    line-height: 1.05;
+  }
+}
+
 .roadmap__line-eight {
   position: absolute;
   top: 64%;
   left: 21px;
   z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-eight {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-7 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-7 {
+    display: block;
+    margin-top: -3px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__icon3.desktop-33 {
+    top: 64.9%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__icon3.desktop-33 {
+    top: 65.1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-33 {
+    top: 64.9%;
+    right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__left-block.desktop-33 {
+    top: 65.1%;
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-33 .roadmap__cloud {
+    width: 395px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-33 .roadmap__cloud::before,
+  .roadmap__left-block.desktop-33 .roadmap__cloud::after {
+    right: -40px;
+    top: 45%;
+    left: unset;
+    border: none;
+    border: 20px solid transparent;
+    border-left: 20px solid #fe446f;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-33 .roadmap__cloud::after {
+    border-left: 20px solid white;
+    right: -38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__left-block.desktop-33 .roadmap__elipse {
+    margin: 0;
+    margin-top: 25px;
+  }
 }
 
 .roadmap__year7 {
@@ -3107,6 +6047,26 @@ a {
   margin-bottom: 35px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year7 {
+    position: absolute;
+    margin: 0;
+    top: 68.45%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year7 {
+    padding: 25px 50px;
+    border-radius: 0px 50px;
+    border: 4px solid #fe446f;
+    font-size: 40px;
+    line-height: 1.05;
+    left: 20%;
+  }
+}
+
 .roadmap__left-block.bottom-4 {
   margin-bottom: 30px;
 }
@@ -3117,6 +6077,22 @@ a {
   max-width: 175px;
   text-align: center;
   margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__text.color-7 {
+    top: 68.25%;
+    margin: 0;
+    left: 40%;
+    min-width: 480px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__text.color-7 {
+    top: 68.45%;
+    min-width: 530px;
+  }
 }
 
 .roadmap__year8 {
@@ -3131,6 +6107,25 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year8 {
+    position: absolute;
+    margin: 0;
+    top: 69.95%;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year8 {
+    padding: 25px 50px;
+    border-radius: 50px 0px;
+    border: 4px solid #fe446f;
+    font-size: 40px;
+    line-height: 1.05;
+  }
+}
+
 .roadmap__line-nine {
   position: absolute;
   top: 73.1%;
@@ -3138,16 +6133,52 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-nine {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-8 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-8 {
+    display: block;
+    margin-top: -3px;
+  }
+}
+
 .roadmap__year9 {
   display: inline-block;
   padding: 18px 55px;
   border: 2px solid #24c4d5;
-  border-radius: 30px 0;
+  border-radius: 0 30px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1;
   background: #ffffff;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__year9 {
+    position: absolute;
+    margin: 0;
+    top: 77.85%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year9 {
+    padding: 25px 50px;
+    border-radius: 0 50px;
+    border: 4px solid #24c4d5;
+    font-size: 40px;
+    line-height: 1.05;
+    top: 77.95%;
+  }
 }
 
 .roadmap__right-block.right-bottom-4 {
@@ -3161,11 +6192,23 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-ten {
+    display: none;
+  }
+}
+
 .roadmap__line-dotted-3 {
   position: absolute;
   right: 21px;
   top: 81.44%;
   z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-dotted-3 {
+    display: none;
+  }
 }
 
 .roadmap__line-dotted-4 {
@@ -3175,13 +6218,76 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-dotted-4 {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-9 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-9 {
+    display: block;
+    margin-top: -3px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.roadmap__line-desktop-10 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-10 {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.roadmap__line-desktop-11 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-11 {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
 .roadmap__text.bottom-5 {
   margin-bottom: 30px;
+  top: 77.5%;
+  left: 70%;
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__text.bottom-5 {
+    top: 77.7%;
+  }
 }
 
 .roadmap__subtitle.background-3 {
   background: #7f4bdc;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__subtitle.background-3 {
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+  }
 }
 
 .roadmap__line-eleven {
@@ -3191,6 +6297,24 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-eleven {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-12 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-12 {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
 .roadmap__line-12 {
   position: absolute;
   left: 21px;
@@ -3198,8 +6322,33 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__line-12 {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-13 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-13 {
+    display: block;
+    margin-top: -3px;
+  }
+}
+
 .roadmap__year6.bottom-6 {
   margin-bottom: 30px;
+  top: 82.85%;
+  left: 70%;
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year6.bottom-6 {
+    top: 82.7%;
+  }
 }
 
 .roadmap__icon2.background-6 {
@@ -3219,11 +6368,48 @@ a {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .roadmap__year10 {
+    position: absolute;
+    margin: 0;
+    top: 95.75%;
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .roadmap__year10 {
+    padding: 25px 50px;
+    border-radius: 50px 0px;
+    border: 4px solid #fe446f;
+    font-size: 40px;
+    line-height: 1.05;
+    left: 65%;
+  }
+}
+
 .roadmap__line-13 {
   position: absolute;
   right: 21px;
   top: 95.65%;
   z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-13 {
+    display: none;
+  }
+}
+
+.roadmap__line-desktop-14 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap__line-desktop-14 {
+    display: block;
+    margin-top: -3px;
+  }
 }
 
 .creator-producer {
