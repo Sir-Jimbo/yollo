@@ -6906,7 +6906,7 @@ a {
 }
 
 .why-yolllo__bottom-picture-first img {
-  max-width: 530px;
+  max-width: 310px;
   padding-right: 10px;
   margin-left: 0;
   margin-right: auto;
@@ -6918,13 +6918,14 @@ a {
   .why-yolllo__bottom-picture-first img {
     position: absolute;
     left: -120px;
+    max-width: 530px;
   }
 }
 
 .why-yolllo__bottom-picture-second img {
   margin-right: 0;
   margin-left: auto;
-  max-width: 530px;
+  max-width: 310px;
   padding-left: 10px;
   border-radius: 50px 0 0 50px;
 }
@@ -6934,6 +6935,7 @@ a {
     position: absolute;
     right: -120px;
     bottom: 0;
+    max-width: 530px;
   }
 }
 
