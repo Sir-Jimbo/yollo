@@ -2870,7 +2870,7 @@ a {
 
 .roadmap__cloud::after {
   border-right: 10px solid white;
-  left: -18px;
+  left: -17px;
 }
 
 .roadmap__cloud-title {
@@ -2972,7 +2972,7 @@ a {
   .roadmap__left-block.desktop-27 .roadmap__cloud::after,
   .roadmap__left-block.desktop-29 .roadmap__cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -3209,12 +3209,12 @@ a {
 
 .roadmap__right-cloud::after {
   border-left: 10px solid white;
-  right: -18px;
+  right: -17px;
 }
 
 @media screen and (min-width: 1024px) {
   .roadmap__right-cloud::after {
-    right: -38px;
+    right: -37px;
   }
 }
 
@@ -3241,7 +3241,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__right-block.desktop-2 .roadmap__right-cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -3325,7 +3325,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__right-block.desktop-3 .roadmap__right-cloud::after {
     border-left: 20px solid white;
-    right: -38px;
+    right: -37px;
   }
 }
 
@@ -3504,7 +3504,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__left-block.desktop-4 .roadmap__cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -3614,7 +3614,7 @@ a {
   .roadmap__right-block.desktop-4 .roadmap__right-cloud::after,
   .roadmap__right-block.desktop-31 .roadmap__right-cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -3711,7 +3711,7 @@ a {
   .roadmap__right-block.desktop-6 .roadmap__right-cloud::after,
   .roadmap__right-block.desktop-8 .roadmap__right-cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -3865,7 +3865,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__right-block.desktop-7 .roadmap__right-cloud::after {
     border-right: 20px solid white;
-    left: -38px;
+    left: -37px;
   }
 }
 
@@ -4199,7 +4199,7 @@ a {
   .roadmap__left-block.desktop-42 .roadmap__cloud::after,
   .roadmap__left-block.desktop-43 .roadmap__cloud::after {
     border-bottom: 20px solid white;
-    top: -38px;
+    top: -37px;
   }
 }
 
@@ -4318,7 +4318,7 @@ a {
   .roadmap__left-block.desktop-44 .roadmap__cloud::after,
   .roadmap__left-block.desktop-45 .roadmap__cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -4609,7 +4609,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__left-block.desktop-11 .roadmap__cloud::after {
     border-right: 20px solid white;
-    left: -38px;
+    left: -37px;
   }
 }
 
@@ -4869,7 +4869,7 @@ a {
   .roadmap__right-block.desktop-47 .roadmap__right-cloud::after,
   .roadmap__right-block.desktop-48 .roadmap__right-cloud::after {
     border-top: 20px solid white;
-    bottom: -38px;
+    bottom: -37px;
   }
 }
 
@@ -5209,7 +5209,7 @@ a {
   .roadmap__right-block.desktop-15 .roadmap__right-cloud::after,
   .roadmap__right-block.desktop-35 .roadmap__right-cloud::after {
     border-bottom: 20px solid white;
-    top: -38px;
+    top: -37px;
   }
 }
 
@@ -5374,7 +5374,7 @@ a {
   .roadmap__right-block.desktop-16 .roadmap__right-cloud::after,
   .roadmap__right-block.desktop-22 .roadmap__right-cloud::after {
     border-right: 20px solid white;
-    left: -38px;
+    left: -37px;
   }
 }
 
@@ -5691,7 +5691,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__left-block.desktop-26 .roadmap__cloud::after {
     border-left: 20px solid white;
-    right: -38px;
+    right: -37px;
   }
 }
 
@@ -5750,7 +5750,7 @@ a {
   .roadmap__left-block.desktop-28 .roadmap__cloud::after,
   .roadmap__left-block.desktop-30 .roadmap__cloud::after {
     border-bottom: 20px solid white;
-    top: -38px;
+    top: -37px;
   }
 }
 
@@ -6026,7 +6026,7 @@ a {
 @media screen and (min-width: 1024px) {
   .roadmap__left-block.desktop-33 .roadmap__cloud::after {
     border-left: 20px solid white;
-    right: -38px;
+    right: -37px;
   }
 }
 
