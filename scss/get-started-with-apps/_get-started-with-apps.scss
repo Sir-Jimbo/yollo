@@ -1,0 +1,175 @@
+.apps {
+   margin-bottom: 80px;
+   @media screen and (min-width: 1024px) {
+      margin-bottom: 105px;
+   }
+
+   &__title {
+      font-size: 20px;
+      line-height: 1.1;
+      text-align: center;
+      margin-bottom: 40px;
+      @media screen and (min-width: 1024px) {
+         font-size: 40px;
+         line-height: 1.05;
+         margin-bottom: 85px;
+      }
+   }
+
+   &__block {
+      padding: 10px;
+      background: #ed6a32;
+      border: 2px solid #7f4bdc;
+      border-radius: 30px 0px;
+      @media screen and (min-width: 1024px) {
+         border: 4px solid #7f4bdc;
+      }
+
+      @media screen and (min-width: 1280px) {
+         padding: 35px 120px;
+      }
+   }
+
+   &__list,
+   &__card-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   &__list {
+      @media screen and (min-width: 1024px) {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+
+   &__card-list {
+      margin-top: 15px;
+   }
+
+   &__card:not(:last-child) {
+      margin-bottom: 15px;
+   }
+
+   &__card {
+      padding: 30px 18px;
+      background: #ffffff;
+      border: 2px solid #7f4bdc;
+      border-radius: 30px 0px;
+      @media screen and (min-width: 1024px) {
+         padding: 30px 20px;
+         width: calc((100% - 3 * 20px) / 3);
+         height: 600px;
+         margin: 10px !important;
+         border: 4px solid #7f4bdc;
+         border-radius: 0px 0px 50px 50px;
+      }
+   }
+
+   &__card-title {
+      font-size: 18px;
+      line-height: 1.39;
+      text-align: center;
+      margin-bottom: 30px;
+      @media screen and (min-width: 1024px) {
+         font-size: 22px;
+         line-height: 1.36;
+      }
+   }
+
+   &__card-description,
+   &__card-text {
+      padding: 0;
+      margin: 0;
+   }
+
+   &__card-item {
+      display: flex;
+   }
+
+   &__card-item:not(:last-child) {
+      margin-bottom: 15px;
+   }
+
+   &__card-elipse {
+      min-width: 16px;
+      height: 16px;
+      border: 2px solid #ed6a32;
+      border-radius: 50%;
+      margin-right: 10px;
+      @media screen and (min-width: 1024px) {
+         border: 4px solid #ed6a32;
+         margin-right: 15px;
+      }
+   }
+
+   &__icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+      @media screen and (min-width: 1024px) {
+         margin: 65px 0;
+      }
+   }
+
+   &__icon:nth-child(1) {
+      margin-right: 10px;
+   }
+
+   &__desktop {
+      @media screen and (min-width: 1024px) {
+         display: flex;
+         align-items: center;
+      }
+   }
+
+   &__desktop-part {
+      @media screen and (min-width: 1024px) {
+         width: 50%;
+      }
+   }
+
+   &__desktop-part:nth-child(1) {
+      @media screen and (min-width: 1024px) {
+         margin-right: 20px;
+      }
+   }
+
+   &__desktop-part:nth-child(1) &__block {
+      @media screen and (min-width: 1280px) {
+         padding: 35px 80px 35px 120px;
+      }
+   }
+
+   &__desktop-part:nth-child(2) &__block {
+      @media screen and (min-width: 1024px) {
+         border-radius: 0px 50px 0px 50px;
+      }
+      @media screen and (min-width: 1280px) {
+         padding: 35px 120px 35px 80px;
+      }
+   }
+
+   &__desktop-part &__card {
+      @media screen and (min-width: 1024px) {
+         justify-content: flex-end;
+         width: 390px;
+      }
+   }
+
+   &__desktop-part:nth-child(1) &__list {
+      @media screen and (min-width: 1024px) {
+         justify-content: flex-end;
+      }
+   }
+
+   &__desktop-part:nth-child(2) &__list {
+      @media screen and (min-width: 1024px) {
+         justify-content: flex-start;
+      }
+   }
+}

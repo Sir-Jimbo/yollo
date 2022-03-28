@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Yollo">
+   <link rel="stylesheet" rel="preload" as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet"
+      rel="preload" as="font">
+   <link rel="stylesheet" rel="preload" as="style" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="stylesheet" rel="preload" as="style" href="./css/style.min.css">
+   <title>Yollo</title>
+</head>
+
+<body class="body">
+   <div class="preloader">
+      <svg class="preloader__image">
+         <use href="./images/sprite.svg#icon-spinner"></use>
+      </svg>
+   </div>
+   <header class="header">
+      <a class="header__logo" href="#" rel="noopener noreferrer" aria-label="logo">
+         <svg class="header__logo-icon" width="102" height="40">
+            <use href="./images/sprite.svg#icon-logo"></use>
+         </svg>
+      </a>
+      <div class="header__burger">
+         <svg class="header__burger-icon" width="69" height="25">
+            <use href="./images/sprite.svg#icon-burger"></use>
+         </svg>
+      </div>
+      <div class="header__close">
+         <svg class="header__close-icon" width="69" height="25">
+            <use href="./images/sprite.svg#icon-close"></use>
+         </svg>
+      </div>
+      <nav class="header__menu">
+         <ul class="header__menu-list list">
+            <li class="header__menu-item">
+               <a class="header__menu-link desktop" href="#products" rel="noopener noreferrer">Yolllo Products</a>
+               <a class="header__menu-link mobile" href="#products-mobile" rel="noopener noreferrer">Yolllo Products</a>
+               <img class="header__menu-item-image-mobile" src="./images/arrow.png" alt="" width="14" height="9">
+               <img class="header__menu-item-image-desktop" src="./images/arrow2.png" alt="" width="14" height="9">
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#premium" rel="noopener noreferrer">Premium</a>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="./why-yolllo.html" rel="noopener noreferrer">Why Yolllo</a>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#subscriptions" rel="noopener noreferrer">Subscriptions</a>
+            </li>
+         </ul>
+         <a class="header__button" href="#" rel="noopener noreferrer">Sign in</a>
+      </nav>
+   </header>
+   <main class="main">
+      <section class="apps">
+         <h1 class="apps__title">Get started with apps</h1>
+         <div class="apps__block">
+            <ul class="apps__list">
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Yolllo Social Platform</h2>
+                  <p class="apps__card-description">
+                     Yolllo social platform is a meeting place for creators and producers:
+                  </p>
+                  <ul class="apps__card-list">
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           blockchain technology
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           protection of intellectual property rights
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           monetization of creative digital content
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           constant growth in demand for content popularity
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           сontent promotion rating system
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="apps__card">
+                  <h2 class="apps__card-title">NFT Packaging</h2>
+                  <ul class="apps__card-list">
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           сopyright protection
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           content monetization and sale through NFT
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           income from the initial sale and unlimited resale of digital content
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Yolllo Rating Mark</h2>
+                  <p class="apps__card-description">
+                     Rating Mark is the ultimate digital content rating tool with real value
+                  </p>
+               </li>
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Yolllo Ads</h2>
+                  <p class="apps__card-description">
+                     Yolllo Ads is an advertising support for the Yolllo social platform:
+                  </p>
+                  <ul class="apps__card-list">
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           creation of promotional materials
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           advertising income
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           content promotion
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           increase in views and rating growth
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Yolllo Social Club</h2>
+                  <ul class="apps__card-list">
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Like-minded club
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Coaches and mentors for personal growth
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Advanced training for Digital Content Producer
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Live communication with Yolllo executives and leaders
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Participation in regular seminars and webinars
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Meetings with world celebrities and artists
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           Attending VIP events of the company
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="apps__icons">
+            <img class="apps__icon" src="./images/Google Play Badge.png" alt="" width="135" height="40">
+            <img class="apps__icon" src="./images/App Store Badge.png" alt="" width="135" height="40">
+         </div>
+         <div class="apps__block">
+            <ul class="apps__list">
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Virtual Back Office</h2>
+                  <p class="apps__card-description">
+                     Yolllo Virtual Back Office is an application with a virtual assistant based on artificial
+                     intelligence (AI)
+                  </p>
+                  <ul class="apps__card-list">
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           access to real-time reporting
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           advanced data analytics
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           digital wallet
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           marketing/recruiting tools.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Yolllo CRM</h2>
+                  <p class="apps__card-description">
+                     Yolllo CRM - App for Digital Content Producers
+                  </p>
+                  <ul class="apps__card-list">
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           customer relationship management system Yolllo - improve efficiency and productivity
+                        </p>
+                     </li>
+                     <li class="apps__card-item">
+                        <div class="apps__card-elipse"></div>
+                        <p class="apps__card-text">
+                           place to organize new clients and partners.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="apps__card">
+                  <h2 class="apps__card-title">Yolllo Token</h2>
+                  <p class="apps__card-description">
+                     Yolllo Token is an internal use token used as the single internal currency of the ecosystem to
+                     reward Yolllo members
+                  </p>
+               </li>
+            </ul>
+         </div>
+         <div class="apps__icons">
+            <img class="apps__icon" src="./images/Google Play Badge.png" alt="" width="135" height="40">
+            <img class="apps__icon" src="./images/App Store Badge.png" alt="" width="135" height="40">
+         </div>
+         <div class="apps__desktop">
+            <div class="apps__desktop-part">
+               <div class="apps__block">
+                  <ul class="apps__list">
+                     <li class="apps__card">
+                        <h2 class="apps__card-title">Happiness App</h2>
+                        <p class="apps__card-description">
+                           Happiness App is an application created to help people find that same happiness, harmonize
+                           life
+                           and
+                           thereby make this world a better place.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="apps__icons">
+                  <img class="apps__icon" src="./images/Google Play Badge.png" alt="" width="135" height="40">
+                  <img class="apps__icon" src="./images/App Store Badge.png" alt="" width="135" height="40">
+               </div>
+            </div>
+            <div class="apps__desktop-part">
+               <div class="apps__block">
+                  <ul class="apps__list">
+                     <li class="apps__card">
+                        <h2 class="apps__card-title">Yolllo Wallet</h2>
+                        <p class="apps__card-description">
+                           To ensure the convenience and smooth operation of our partners, we have integrated a highly
+                           secure
+                           Crypto Exchanger that allows you to easily deposit, withdraw and transfer funds to and from
+                           the
+                           Yolllo ecosystem.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="apps__icons">
+                  <img class="apps__icon" src="./images/Google Play Badge.png" alt="" width="135" height="40">
+                  <img class="apps__icon" src="./images/App Store Badge.png" alt="" width="135" height="40">
+               </div>
+            </div>
+         </div>
+         <div class="apps__desktop">
+            <div class="apps__desktop-part">
+               <div class="apps__block">
+                  <ul class="apps__list">
+                     <li class="apps__card">
+                        <h2 class="apps__card-title">Happiness App</h2>
+                        <p class="apps__card-description">
+                           Happiness App is an application created to help people find that same happiness, harmonize
+                           life and
+                           thereby make this world a better place.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="apps__icons">
+                  <img class="apps__icon" src="./images/Google Play Badge.png" alt="" width="135" height="40">
+                  <img class="apps__icon" src="./images/App Store Badge.png" alt="" width="135" height="40">
+               </div>
+            </div>
+            <div class="apps__desktop-part">
+               <div class="apps__block">
+                  <ul class="apps__list">
+                     <li class="apps__card">
+                        <h2 class="apps__card-title">Virtual Back Office</h2>
+                        <p class="apps__card-description">
+                           Vividly is an app for training partners Yolllo
+                        </p>
+                        <ul class="apps__card-list">
+                           <li class="apps__card-item">
+                              <div class="apps__card-elipse"></div>
+                              <p class="apps__card-text">
+                                 personal growth trainings
+                              </p>
+                           </li>
+                           <li class="apps__card-item">
+                              <div class="apps__card-elipse"></div>
+                              <p class="apps__card-text">
+                                 a unique training program for Digital Content Producers
+                              </p>
+                           </li>
+                           <li class="apps__card-item">
+                              <div class="apps__card-elipse"></div>
+                              <p class="apps__card-text">
+                                 training system Sales leader
+                              </p>
+                           </li>
+                           <li class="apps__card-item">
+                              <div class="apps__card-elipse"></div>
+                              <p class="apps__card-text">
+                                 seminars, trainings
+                              </p>
+                           </li>
+                           <li class="apps__card-item">
+                              <div class="apps__card-elipse"></div>
+                              <p class="apps__card-text">
+                                 live and online coaching
+                              </p>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <div class="apps__icons">
+                  <img class="apps__icon" src="./images/Google Play Badge.png" alt="" width="135" height="40">
+                  <img class="apps__icon" src="./images/App Store Badge.png" alt="" width="135" height="40">
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <nav class="footer__menu">
+         <div class="footer__menu-first">
+            <h3 class="footer__menu-title">Products</h3>
+            <div class="footer__menu-first-block">
+               <ul class="footer__menu-list list" id="products">
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Market</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Nft packaging</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Platform</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Virtual Back Office</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Social Club</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo DCP</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo CRM</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Vividly Academy</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Performance</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Vividly Academy</a>
+                  </li>
+               </ul>
+               <ul class="footer__menu-list list" id="products">
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Performance</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Ads</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Rating Mark</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Token</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer"> Worldwide payment system</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Membership Packages</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Streams of Revenue</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Loyalty and Referral Programs</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__menu-second">
+            <h3 class="footer__menu-title">Info</h3>
+            <ul class="footer__menu-list list" id="info">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Why Yolllo</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Privacy Policy</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Terms of Service</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Refund and return policy</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Contact Us</a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__menu-third">
+            <h3 class="footer__menu-title">Engage</h3>
+            <ul class="footer__menu-list list" id="engage">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Become a country leader</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Become a member of ecosystem</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">FAQ</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="footer__right">
+         <div class="footer__logo">
+            <svg class="footer__logo-icon" width="132" height="25">
+               <use href="./images/sprite.svg#icon-logo-footer"></use>
+            </svg>
+         </div>
+         <p class="footer__description">
+            <strong>Yolllo Group</strong> is a private virtual network that has unique features and has high security.
+         </p>
+         <img class="footer__icon" src="./images/Mask group.png" alt="">
+         <p class="footer__copyright">©2022 Yolllo Group</p>
+      </div>
+   </footer>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script type="text/javascript" src="./js/scripts.js" async></script>
+</body>
+
+</html>

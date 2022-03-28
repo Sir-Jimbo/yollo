@@ -7208,4 +7208,229 @@ a {
 .loaded .preloader {
   display: none;
 }
+
+.apps {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps {
+    margin-bottom: 105px;
+  }
+}
+
+.apps__title {
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__title {
+    font-size: 40px;
+    line-height: 1.05;
+    margin-bottom: 85px;
+  }
+}
+
+.apps__block {
+  padding: 10px;
+  background: #ed6a32;
+  border: 2px solid #7f4bdc;
+  border-radius: 30px 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__block {
+    border: 4px solid #7f4bdc;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .apps__block {
+    padding: 35px 120px;
+  }
+}
+
+.apps__list, .apps__card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.apps__card-list {
+  margin-top: 15px;
+}
+
+.apps__card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.apps__card {
+  padding: 30px 18px;
+  background: #ffffff;
+  border: 2px solid #7f4bdc;
+  border-radius: 30px 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__card {
+    padding: 30px 20px;
+    width: calc((100% - 3 * 20px) / 3);
+    height: 600px;
+    margin: 10px !important;
+    border: 4px solid #7f4bdc;
+    border-radius: 0px 0px 50px 50px;
+  }
+}
+
+.apps__card-title {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__card-title {
+    font-size: 22px;
+    line-height: 1.36;
+  }
+}
+
+.apps__card-description, .apps__card-text {
+  padding: 0;
+  margin: 0;
+}
+
+.apps__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.apps__card-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.apps__card-elipse {
+  min-width: 16px;
+  height: 16px;
+  border: 2px solid #ed6a32;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__card-elipse {
+    border: 4px solid #ed6a32;
+    margin-right: 15px;
+  }
+}
+
+.apps__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__icons {
+    margin: 65px 0;
+  }
+}
+
+.apps__icon:nth-child(1) {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop-part {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop-part:nth-child(1) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .apps__desktop-part:nth-child(1) .apps__block {
+    padding: 35px 80px 35px 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop-part:nth-child(2) .apps__block {
+    border-radius: 0px 50px 0px 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .apps__desktop-part:nth-child(2) .apps__block {
+    padding: 35px 120px 35px 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop-part .apps__card {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop-part:nth-child(1) .apps__list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__desktop-part:nth-child(2) .apps__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 /*# sourceMappingURL=style.css.map */
