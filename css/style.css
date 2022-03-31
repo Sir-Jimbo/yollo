@@ -7433,4 +7433,141 @@ a {
             justify-content: flex-start;
   }
 }
+
+.contacts {
+  padding: 0 10px;
+  margin-bottom: 120px;
+}
+
+@media screen and (min-width: 1170px) {
+  .contacts {
+    padding: 0 120px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    margin-bottom: 170px;
+  }
+}
+
+.contacts__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts__block {
+    margin-right: 75px;
+  }
+}
+
+.contacts__address {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__address {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 50px;
+  }
+}
+
+.contacts__list {
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__list {
+    margin-bottom: 70px;
+  }
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__item:first-child {
+  margin-bottom: 30px;
+}
+
+.contacts__icon {
+  margin-right: 15px;
+}
+
+.contacts__description-text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.14;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__description-text {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.contacts__description-link {
+  font-size: 18px;
+  line-height: 1.59;
+  color: #ED6A32;
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__description-link {
+    font-size: 22px;
+    line-height: 1.36;
+  }
+}
+
+.contacts__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__social-links-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.contacts__picture {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts__picture {
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */
