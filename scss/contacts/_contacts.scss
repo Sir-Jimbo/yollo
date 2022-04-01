@@ -1,6 +1,7 @@
 .contacts {
    padding: 0 10px;
    margin-bottom: 120px;
+   max-width: 1440px;
    @media screen and (min-width: 1170px) {
       padding: 0 120px;
    }
@@ -11,6 +12,7 @@
 
    @media screen and (min-width: 1441px){
       margin: 0 auto;
+      margin-bottom: 170px;
    }
 
    &__title {
