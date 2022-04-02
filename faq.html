@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Yollo">
+   <link rel="stylesheet" rel="preload" as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet"
+      rel="preload" as="font">
+   <link rel="stylesheet" rel="preload" as="style" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="stylesheet" rel="preload" as="style" href="./css/style.min.css">
+   <title>Yollo</title>
+</head>
+
+<body class="body">
+   <div class="preloader">
+      <svg class="preloader__image">
+         <use href="./images/sprite.svg#icon-spinner"></use>
+      </svg>
+   </div>
+   <header class="header">
+      <a class="header__logo" href="#" rel="noopener noreferrer" aria-label="logo">
+         <svg class="header__logo-icon" width="102" height="40">
+            <use href="./images/sprite.svg#icon-logo"></use>
+         </svg>
+      </a>
+      <div class="header__burger">
+         <svg class="header__burger-icon" width="69" height="25">
+            <use href="./images/sprite.svg#icon-burger"></use>
+         </svg>
+      </div>
+      <div class="header__close">
+         <svg class="header__close-icon" width="69" height="25">
+            <use href="./images/sprite.svg#icon-close"></use>
+         </svg>
+      </div>
+      <nav class="header__menu">
+         <ul class="header__menu-list list">
+            <li class="header__menu-item">
+               <a class="header__menu-link desktop" href="#products" rel="noopener noreferrer">Yolllo Products</a>
+               <a class="header__menu-link mobile" href="#products-mobile" rel="noopener noreferrer">Yolllo Products</a>
+               <img class="header__menu-item-image-mobile" src="./images/arrow.png" alt="" width="14" height="9">
+               <img class="header__menu-item-image-desktop" src="./images/arrow2.png" alt="" width="14" height="9">
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#premium" rel="noopener noreferrer">Premium</a>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="./why-yolllo.html" rel="noopener noreferrer">Why Yolllo</a>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#subscriptions" rel="noopener noreferrer">Subscriptions</a>
+            </li>
+         </ul>
+         <a class="header__button" href="#" rel="noopener noreferrer">Sign in</a>
+      </nav>
+   </header>
+   <main class="main">
+      <section class="faq">
+         <h1 class="faq__title">FAQ</h1>
+         <div class="faq__hero">
+            <picture class="faq__picture-first">
+               <source type="image/webp" srcset="./images/faq-1.webp">
+               <source type="image/png" srcset="./images/faq-1.jpg">
+               <img src="./images/faq-1.webp" alt="">
+            </picture>
+            <form class="faq__form" action="">
+               <div class="faq__label" for="">Your question</div>
+               <div class="faq__search">
+                  <input class="faq__input" type="text" name="Your question" id="" placeholder="Your question">
+                  <button class="faq__search-button" type="submit" value="">
+                     <svg class="faq__search-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-serch-2"></use>
+                     </svg>
+                  </button>
+               </div>
+            </form>
+            <picture class="faq__picture-second">
+               <source type="image/webp" srcset="./images/faq-2.webp">
+               <source type="image/png" srcset="./images/faq-2.jpg">
+               <img src="./images/faq-2.webp" alt="">
+            </picture>
+         </div>
+         <h2 class="faq__subtitle">Сategories of questions</h2>
+         <ul class="faq__list list">
+            <li class="faq__item">
+               <div class="faq__item-image">
+                  <picture class="faq__item-picture">
+                     <source type="image/webp" srcset="./images/faq-3.webp">
+                     <source type="image/png" srcset="./images/faq-3.jpg">
+                     <img src="./images/faq-3.webp" alt="">
+                  </picture>
+               </div>
+               <div class="faq__item-bottom">
+                  <h3 class="faq__item-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <svg class="faq__item-icon" width="38" height="19">
+                     <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+               </div>
+            </li>
+            <li class="faq__item">
+               <div class="faq__item-image">
+                  <picture class="faq__item-picture">
+                     <source type="image/webp" srcset="./images/faq-3.webp">
+                     <source type="image/png" srcset="./images/faq-3.jpg">
+                     <img src="./images/faq-3.webp" alt="">
+                  </picture>
+               </div>
+               <div class="faq__item-bottom">
+                  <h3 class="faq__item-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <svg class="faq__item-icon" width="38" height="19">
+                     <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+               </div>
+            </li>
+            <li class="faq__item">
+               <div class="faq__item-image">
+                  <picture class="faq__item-picture">
+                     <source type="image/webp" srcset="./images/faq-3.webp">
+                     <source type="image/png" srcset="./images/faq-3.jpg">
+                     <img src="./images/faq-3.webp" alt="">
+                  </picture>
+               </div>
+               <div class="faq__item-bottom">
+                  <h3 class="faq__item-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <svg class="faq__item-icon" width="38" height="19">
+                     <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+               </div>
+            </li>
+            <li class="faq__item">
+               <div class="faq__item-image">
+                  <picture class="faq__item-picture">
+                     <source type="image/webp" srcset="./images/faq-3.webp">
+                     <source type="image/png" srcset="./images/faq-3.jpg">
+                     <img src="./images/faq-3.webp" alt="">
+                  </picture>
+               </div>
+               <div class="faq__item-bottom">
+                  <h3 class="faq__item-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <svg class="faq__item-icon" width="38" height="19">
+                     <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+               </div>
+            </li>
+            <li class="faq__item">
+               <div class="faq__item-image">
+                  <picture class="faq__item-picture">
+                     <source type="image/webp" srcset="./images/faq-3.webp">
+                     <source type="image/png" srcset="./images/faq-3.jpg">
+                     <img src="./images/faq-3.webp" alt="">
+                  </picture>
+               </div>
+               <div class="faq__item-bottom">
+                  <h3 class="faq__item-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <svg class="faq__item-icon" width="38" height="19">
+                     <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+               </div>
+            </li>
+            <li class="faq__item">
+               <div class="faq__item-image">
+                  <picture class="faq__item-picture">
+                     <source type="image/webp" srcset="./images/faq-3.webp">
+                     <source type="image/png" srcset="./images/faq-3.jpg">
+                     <img src="./images/faq-3.webp" alt="">
+                  </picture>
+               </div>
+               <div class="faq__item-bottom">
+                  <h3 class="faq__item-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <svg class="faq__item-icon" width="38" height="19">
+                     <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+               </div>
+            </li>
+         </ul>
+         <a class="faq__button first" href="">Show more</a>
+         <h2 class="faq__subtitle">Questions</h2>
+         <ul class="faq__questions-list list">
+            <li class="faq__questions-item">
+               <div class="faq__questions-block">
+                  <div class="faq__questions-title">Where can I watch?</div>
+                  <img class="faq__questions-icon" src="./images/Path-2.png" alt="">
+               </div>
+               <div class="faq__questions-description">Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore
+                  ismod nulla.
+               </div>
+            </li>
+            <li class="faq__questions-item">
+               <div class="faq__questions-block">
+                  <div class="faq__questions-title">Where can I watch?</div>
+                  <img class="faq__questions-icon" src="./images/Path-2.png" alt="">
+               </div>
+               <div class="faq__questions-description">Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore
+                  ismod nulla.
+               </div>
+            </li>
+            <li class="faq__questions-item">
+               <div class="faq__questions-block">
+                  <div class="faq__questions-title">Where can I watch?</div>
+                  <img class="faq__questions-icon" src="./images/Path-2.png" alt="">
+               </div>
+               <div class="faq__questions-description">Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore
+                  ismod nulla.
+               </div>
+            </li>
+            <li class="faq__questions-item">
+               <div class="faq__questions-block">
+                  <div class="faq__questions-title">Where can I watch?</div>
+                  <img class="faq__questions-icon" src="./images/Path-2.png" alt="">
+               </div>
+               <div class="faq__questions-description">Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore
+                  ismod nulla.
+               </div>
+            </li>
+            <li class="faq__questions-item">
+               <div class="faq__questions-block">
+                  <div class="faq__questions-title">Where can I watch?</div>
+                  <img class="faq__questions-icon" src="./images/Path-2.png" alt="">
+               </div>
+               <div class="faq__questions-description">Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore
+                  ismod nulla.
+               </div>
+            </li>
+            <li class="faq__questions-item">
+               <div class="faq__questions-block">
+                  <div class="faq__questions-title">Where can I watch?</div>
+                  <img class="faq__questions-icon" src="./images/Path-2.png" alt="">
+               </div>
+               <div class="faq__questions-description">Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore
+                  ismod nulla.
+               </div>
+            </li>
+         </ul>
+         <a class="faq__button" href="">Show more</a>
+      </section>
+   </main>
+   <footer class="footer">
+      <nav class="footer__menu">
+         <div class="footer__menu-first">
+            <h3 class="footer__menu-title">Products</h3>
+            <div class="footer__menu-first-block">
+               <ul class="footer__menu-list list" id="products">
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Market</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Nft packaging</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Platform</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Virtual Back Office</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Social Club</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo DCP</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo CRM</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Vividly Academy</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Performance</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Vividly Academy</a>
+                  </li>
+               </ul>
+               <ul class="footer__menu-list list" id="products">
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Social Performance</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Ads</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Rating Mark</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Token</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer"> Worldwide payment system</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Yolllo Membership Packages</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Streams of Revenue</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#" rel="noopener noreferrer">Loyalty and Referral Programs</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__menu-second">
+            <h3 class="footer__menu-title">Info</h3>
+            <ul class="footer__menu-list list" id="info">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Why Yolllo</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Privacy Policy</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Terms of Service</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Refund and return policy</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="./contacts.html" rel="noopener noreferrer">Contact Us</a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__menu-third">
+            <h3 class="footer__menu-title">Engage</h3>
+            <ul class="footer__menu-list list" id="engage">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Become a country leader</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">Become a member of ecosystem</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#" rel="noopener noreferrer">FAQ</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="footer__right">
+         <div class="footer__logo">
+            <svg class="footer__logo-icon" width="132" height="25">
+               <use href="./images/sprite.svg#icon-logo-footer"></use>
+            </svg>
+         </div>
+         <p class="footer__description">
+            <strong>Yolllo Group</strong> is a private virtual network that has unique features and has high security.
+         </p>
+         <img class="footer__icon" src="./images/Mask group.png" alt="">
+         <p class="footer__copyright">©2022 Yolllo Group</p>
+      </div>
+   </footer>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script type="text/javascript" src="./js/scripts.js" async></script>
+</body>
+
+</html>

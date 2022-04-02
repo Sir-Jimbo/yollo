@@ -26,10 +26,10 @@ function closeMenu() {
 }
 
 
-const swiper = new Swiper('.swiper', {
+const subscriptionsSlider = new Swiper('.subscriptions__slider', {
 
    pagination: {
-      el: '.swiper-pagination',
+      el: '.subscriptions__pagination',
       clickable: true,
    },
    grabCursor: true,
@@ -49,6 +49,33 @@ const swiper = new Swiper('.swiper', {
       },
    }
 })
+
+const partnersSlider = new Swiper('.our-partners__slider', {
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   grabCursor: true,
+   watchOverflow: true,
+   breakpoints: {
+      640: {
+         slidesPerView: 2,
+      },
+      1024: {
+         slidesPerView: 3,
+      },
+
+   }
+});
+
+const partnersSliderDesktop = new Swiper('.our-partners__slider-desktop', {
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   direction: 'vertical',
+   slidesPerView: 6,
+});
 
 let tab = function () {
    let tabNav = document.querySelectorAll('.content__tabs-item'),
@@ -128,4 +155,16 @@ window.onload = function () {
       document.body.classList.add('loaded');
       document.body.classList.remove('loaded_hiding');
    }, 500);
+}
+
+
+const questions = document.getElementsByClassName("faq__questions-block");
+const contents = document.getElementsByClassName("faq__questions-description");
+const icons = document.getElementsByClassName("faq__questions-icon");
+
+for (let i = 0; i < questions.length; i++) {
+   questions[i].addEventListener("click", () => {
+       contents[i].classList.toggle('active');
+       icons[i].classList.toggle('active');
+   });
 }
